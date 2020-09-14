@@ -1,0 +1,44 @@
+#!/bin/bash
+# My first script
+
+#alias proj="cd /home/ba/FAnalyzer/"
+
+# Get the argument
+# schema_file_name=("$@")
+schema_file_name=$1
+minsup=$2
+
+# Extract the dataname
+data_name=${schema_file_name::-5}
+# Add _charts.json to the dataname
+charts_name=$data_name
+charts_name+="_charts.json"
+echo $charts_name
+
+# Remove the .json in charts name and add .csv
+charts_name_csv=charts_name
+charts_name_csv=${charts_name::-5}
+charts_name_csv+=".csv"
+
+(cd /home/ba/FAnalyzer/ && python FAnalyzer_final.py /home/ba/FAnalyzer/schemaData/json/$schema_file_name $minsup)  #creates metadata _charts.json file at /home/ba/FAnalyzer/schemaData/chartsJSON/ by taking file at /home/ba/FAnalyzer/schemaData/json
+echo "Done running FAnalyzer script"
+(cd /home/ba/FAnalyzer/ && /usr/bin/python query_builder.py /home/ba/FAnalyzer/schemaData/json/$schema_file_name)	#creates metadata *_charts.csv file	from /home/ba/FAnalyzer/schemaData/chartsJSON/*.json file and stores at /home/ba/FAnalyzer/schemaData/schemaCSV. 
+echo "Done running query_builder script"
+(cd /home/ba/FAnalyzer/ && /usr/bin/docker cp /home/ba/FAnalyzer/schemaData/schemaCSV/$charts_name_csv mysql_docker_db_1:/home/root/data)  
+echo "Done copying the query file to docker instance"
+(cd /home/ba/FAnalyzer/ && /usr/bin/python3 mysql_connect_query.py /home/ba/FAnalyzer/schemaData/schemaCSV/$charts_name_csv)	#creates metadata table from *_charts.csv	
+echo "Done creating the query table in mysql!!"
+(cd /home/ba/FAnalyzer/ && /usr/bin/python3 cache_plots_by_slices.py /home/ba/FAnalyzer/schemaData/schemaCSV/$charts_name_csv)		#creates actual data table (cache) (e.g. filename_cache) from metadata table
+# allergy_data_charts.csv
+#This script cache_plots_by_slices.py brings actual data of input data set into play which is at /home/ba/FAnalyzer/schemaData/data/ in csv format.
+echo "Plots cached successfully"
+(/usr/bin/docker exec mysql_docker_db_1 rm -rf /home/root/data/$charts_name_csv)
+echo "Done removing file in docker container"
+
+
+
+#cd /home/ba/FAnalyzer/ && /usr/bin/python3 cache_plots_by_slices.py /home/ba/FAnalyzer/schemaData/schemaCSV/allergy_data_charts.csv
+#cd /home/ba/FAnalyzer/ && /usr/bin/python3 cache_plots_by_slices.py /home/ba/FAnalyzer/schemaData/schemaCSV/movies-boxplots_charts.csv
+#cd /home/ba/FAnalyzer/ && /usr/bin/python3 cache_plots_by_slices.py /home/ba/FAnalyzer/schemaData/schemaCSV/Stone-Prices-HighSupport.csv
+
+cd /home/ba/FAnalyzer/ && python FAnalyzer_final.py /home/ba/FAnalyzer/schemaData/json/allergy_data.json 1

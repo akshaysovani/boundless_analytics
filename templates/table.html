@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TabularForm</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/web.css">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='master.css') }}"> -->
+</head>
+
+<style>
+    .table-container {
+        height: 10em;
+    }
+
+    table {
+        display: flex;
+        flex-flow: column;
+        /* height: 80%; */
+        width: 100%;
+    }
+
+    table thead {
+        /* head takes the height it requires, 
+  and it's not scaled when table is resized */
+        flex: 0 0 auto;
+        width: calc(100% - 0.9em);
+        height: 20px;
+    }
+
+    table tbody {
+        /* body takes all the remaining available space */
+        flex: 1 1 auto;
+        display: block;
+        height: 500px;
+        overflow-y: scroll;
+    }
+
+    table tbody tr {
+        width: 100%;
+    }
+
+    table thead,
+    table tbody tr {
+        display: table;
+        table-layout: fixed;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h3>{{ chart['plottype'][0] }}</h3>
+        {% if chart.slice %}
+        <tr> Slice: 
+            {% for tag in chart.slice %} 
+            {{ tag }} 
+            {% if loop.index%2 != 0 %} 
+            : 
+            {% elif loop.index != chart.slice|length%}
+            ,
+            {% endif %}
+            {% endfor %}
+        </tr>
+        {% endif %}
+        <table>
+            <thead>
+                {% if chart['type'][0] == 'bargraph' %}
+                <tr>
+                    <th>{{ chart['x'][0] }} </th>
+                    <th>count</th>
+                </tr>
+                {% elif chart['type'][0] == 'heatmap' %}
+                <tr>
+                    <th>{{ chart['x'][0] }} </th>
+                    <th>{{ chart['y'][0] }} </th>
+                    <th>count</th>
+                </tr>
+                {% else %}
+                <tr>
+                    <th>{{ chart['x'][0]}} </th>
+                    <th>minimum</th>
+                    <th>firstquatile</th>
+                    <th>median</th>
+                    <th>thirdquatile</th>
+                    <th>maximum</th>
+                    <th>average</th>
+                </tr>
+                {% endif %}
+            </thead>
+            <tbody>
+                <!-- <tr>
+                    <td>Name1</td>
+                    <td>Description1</td>
+                    <td>Description1</td>
+                </tr> -->
+                {% for row in chart['data'] %}
+                <tr>
+                    {% if chart['type'][0] == 'bargraph' %}
+                    <td>
+                        {{ chart['xcategories'][row[0]] }}
+                    </td>
+                    <td>
+                        {{ row[1] }}
+                    </td>
+                    {% elif chart['type'][0] == 'heatmap' %}
+                    <td>
+                        {{ chart['xcategories'][row[0]] }}
+                    </td>
+                    <td>
+                        {{ chart['ycategories'][row[1]] }}
+                    </td>
+                    <td>
+                        {{ row[2] }}
+                    </td>
+                    {% elif chart['type'][0] == 'boxplot' %}
+                    <td>
+                        {{ chart['xcategories'][row[0]] }}
+                    </td>
+                    <td>
+                        {{ row[1] }}
+                    </td>
+                    <td>
+                        {{ row[2] }}
+                    </td>
+                    <td>
+                        {{ row[3] }}
+                    </td>
+                    <td>
+                        {{ row[4] }}
+                    </td>
+                    <td>
+                        {{ row[5] }}
+                    </td>
+                    <td>
+                        {{ row[6] }}
+                    </td>
+                    {% endif %}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

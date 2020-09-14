@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/modal.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/SummaryTable.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/select2.css') }}">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boundless Analytics</title>
+    <style>
+        html, body { height: 100%; width: 100%; margin: 0; }
+        body { display: flex; }
+        form.searchForm { margin: auto; display: flex; flex-direction: column; align-items: center }
+        .searchForm div { text-align: center; font-size: 50pt; }
+        .searchForm .main { text-align: center; font-size: 35pt; }
+        .searchForm input { text-align: center; font-size: medium; }
+        .searchForm select { text-align: center; font-size: medium; }
+        .searchForm .advanced span { margin: 1pt 10pt 1pt 10pt }
+        .card-body div {font-size: 20px}
+        .select2 span {font-size: 20px}
+        .select2 li {font-size: smaller}  optgroup{ height: 50px;}
+        .col-sm-4 div {font-size: medium;}
+        .progress div {font-size: 12px;}
+        #queryCard {display: none}
+        #all_attributes {display: none}
+        #fupload {display: none}
+
+    </style>
+    <script>
+        var fonts = [
+            'Arial, Helvetica, sans-serif', '"Arial Black", Gadget, sans-serif', '"Comic Sans MS", cursive, sans-serif',
+            'Impact, Charcoal, sans-serif', '"Lucida Sans Unicode", "Lucida Grande", sans-serif', 'Tahoma, Geneva, sans-serif',
+            '"Trebuchet MS", Helvetica, sans-serif', 'Verdana, Geneva, sans-serif', '"Courier New", Courier, monospace',
+            '"Lucida Console", Monaco, monospace'
+        ];
+        var letters = ['b', 'o', 'u', 'n', 'd', 'l', 'e', 's1', 's2'];
+        setInterval(function() {
+            var font = fonts[Math.floor(Math.random() * fonts.length)];
+            var letter = letters[Math.floor(Math.random() * letters.length)];
+            var letterElement = document.getElementById(letter);
+            letterElement.style.fontFamily = font;
+        }, 1000);
+        function toggle() {
+            var div = document.getElementById("advanced");
+            if (div.classList.contains("hidden")) {
+                div.className = "advanced show";
+            }
+            else {
+                div.className = "advanced hidden";
+            }
+        }
+    </script>
+    <!--  For loading  -->
+    <style>
+        #page{
+            display: none;
+        }
+        #loading{
+            display: block;
+        }
+    </style>
+    <script>
+        function myFunction()
+        {
+            document.getElementById("page").style.display = "block";
+            document.getElementById("loading").style.display = "none";
+        }
+    </script>
+</head>
+<body onload="myFunction()">
+<!--<form action="/ba/search/" name="theform" id="theform" class="searchForm" enctype = "multipart/form-data" method="post" style="margin-left: 40px; margin-right: 40px;">-->
+<div id="page">
+    <a href="/">
+        <b>Home</b>
+    </a>
+    <form name="theform" id="theform" class="searchForm" enctype = "multipart/form-data" method="post">
+        <div id="basic" class="basic">
+            <span id="b">b</span><span id="o">o</span><span id="u">u</span><span id="n">n</span><span id="d">d</span><span id="l">l</span><span id="e">e</span><span id="s1">s</span><span id="s2">s</span>
+            <div>
+                <input name="q" class="main" style="display: none;" onKeyUp="if (event.keyCode == 13) { document.theform.submit(); }" />
+                <!--<input type="radio" name="all" style="display: none;" checked>-->
+            </div>
+        </div>
+
+        {# Search bar #}
+        <select id="all_attributes" class="select2" multiple style="width: 535px">
+            <optgroup label="Attributes" id="Attributes">
+                {% for attr, values in schema_attributes.items() %}
+                {% set actual_text = attr ~ ':' ~ attr %}
+                <option class="l1" value="{{ actual_text }}">{{ attr }}</option>
+                {% for sub_attr, value in values.items() %}
+                {% set actual_text = attr ~ ':' ~ value %}
+                <option class="l2" value="{{ actual_text }}">{{ actual_text }}</option>
+                {% endfor %}
+                {% endfor %}
+            </optgroup>
+            <optgroup label="GraphType" id="Graph">
+                <option value="bargraph">bargraph</option>
+                <option value="groupedBargraph">groupedBargraph</option>
+                <option value="heatmap">heatmap</option>
+                <option value="histogram">histogram</option>
+                <option value="scatter">scatter</option>
+                <option value="boxplot">boxplot</option>
+            </optgroup>
+            <optgroup label="OrderBy(Default - Descending)" id="Ordering">
+                <option value="Score">Score</option>
+                <option value="Support">Support</option>
+            </optgroup>
+        </select>
+
+
+        <div class="row" id="fupload" style="margin: 10px;">
+            <input name="file" type="file" id="fileUpload" />
+            <input type="button" id="upload" value="Upload" />
+        </div>
+
+        {#  Options for the user to select whether a column is numerical or categorical  #}
+        <div id="myModal" class="modal" style="text-align: center;">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <p style="font-size: medium; font-weight: bold">Please select the attribute type for every column</p>
+                <fieldset id="schema" style="font-size: medium;  display: inline-block;"></fieldset>
+                <input type="button" id="okay" class="close" value="OK" />
+                {#        <span class="close">&times;</span>#}
+            </div>
+        </div>
+
+
+        {#  Options for the user to select whether a column is required or not #}
+        <div id="requiredModal" class="modal" style="text-align: center;">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <p style="font-size: medium; font-weight: bold">Please select the attributes you want to remove</p>
+                <fieldset id="attributesStuff" style="font-size: medium;  display: flex;">
+                    <label class="checkbox-inline" style="font-size: medium">
+                        <input type="checkbox" value="Mesmer" name="Checkbox[]">Mesmer</label>
+                    <label class="checkbox-inline" style="font-size: medium">
+                        <input type="checkbox" value="Guardian" name="Checkbox[]">Guardian</label>
+                    <label class="checkbox-inline" style="font-size: medium">
+                        <input type="checkbox" value="Necromancer" name="Checkbox[]">Necromancer</label>
+                </fieldset>
+                <input type="button" id="itsokay" class="itsokay" value="OK" />
+            </div>
+        </div>
+
+        {#  Pop-up for user to when the uploaded dataset name already exists  #}
+        <div id="reloadModal" class="modal" style="text-align: center;">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <p style="font-size: medium; font-weight: bold">This dataset is already present. Do you want to reload this dataset again?</p>
+                <input type="button" id="Yes" class="yes" value="Yes" />
+                <input type="button" id="No" class="no" value="No" />
+            </div>
+        </div>
+
+        {#  Pop-up for user when the top 100 results are ready  #}
+        <div id="top100Modal" class="modal" style="text-align: center;">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <p style="font-size: medium; font-weight: bold">The top 100 results are ready for searching. The remaining are being run in the background. You will be notified when they are ready.</p>
+                <input type="button" id="cool" class="cool" value="Okay" />
+            </div>
+        </div>
+
+        {#  Pop-up for user when all the data is loaded  #}
+        <div id="topModal" class="modal" style="text-align: center;">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <p style="font-size: medium; font-weight: bold">All the graphs have been loaded. Please search.</p>
+                <input type="button" id="damncool" class="damncool" value="Okay" />
+            </div>
+        </div>
+
+        {#  Warning the user that all the data has not yet been completely loaded  #}
+        <div id="warningModal" class="modal" style="text-align: center;">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <p style="font-size: medium; font-weight: bold">Note that the graphs seen are on partial data.</p>
+                <input type="button" id="closing" class="closing" value="Okay" />
+            </div>
+        </div>
+
+        {#  Pop up for the user saying that all the attributes selected are categorical  #}
+        <div id="categoryModal" class="modal" style="text-align: center;">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <p style="font-size: medium; font-weight: bold">The attribute type selected for all the variables are categorical. Do you want to continue?</p>
+                <input type="button" id="ohyeah" class="ohyeah" value="Yes" />
+                <input type="button" id="ohno" class="ohno" value="No" />
+            </div>
+        </div>
+
+        {#  Pop up for the user to confirm the deletion of a dataset  #}
+        <div id="confirmModal" class="modal" style="text-align: center;">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <p style="font-size: medium; font-weight: bold">Are you sure?</p>
+                <input type="button" id="sadyeah" class="sadyeah" value="Yes" />
+                <input type="button" id="sadno" class="sadno" value="No" />
+            </div>
+        </div>
+
+        {#  Pop up for the user to either re-rerun the code with a smaller support  #}
+        <div id="rerunModal" class="modal" style="text-align: center;">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <p style="font-size: medium; font-weight: bold">Do you want to re-run with a larger minimum support?</p>
+                <input type="button" id="hmmmyeah" class="hmmmyeah" value="Yes" />
+                <input type="button" id="hmmmno" class="hmmmno" value="No" />
+            </div>
+        </div>
+
+        {#  Pop up for the user to enter the minimum support  #}
+        <div id="minsupModal" class="modal" style="text-align: center;">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <p style="font-size: medium; font-weight: bold">Please enter the minimum support. (Default:1)</p>
+                <input type="number" step="0.1" name="minsupvalue" id="minsupvalue" class="minsupvalue" value="1" />
+                <input type="button" id="minsupyeah" class="minsupyeah" value="Okay" />
+            </div>
+        </div>
+
+        {#  Pop up for the tell that user that the disk is full and that the process will be killed.  #}
+        <div id="diskfullModal" class="modal" style="text-align: center;">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <p style="font-size: medium; font-weight: bold">Please note that the disk is almost full. Hence, this query will be killed and all its respective files will be deleted.</p>
+            </div>
+        </div>
+
+        {# Input names that will keep the information of the selected or not and the attribute types of the variables selected by the user. #}
+        <input name="selectedornot" id="selectedornot" style="display: none;" />
+        <input name="cat_num" id="cat_num" style="display: none;" />
+        {# Set the filename. #}
+        <input name="filename" id="filename" style="display: none;" />
+        <div class="row">
+            <div class="row">
+            <label style="font-size: medium; margin-right: 10px; margin-top: 10px;">Display Type: </label>
+                <select id="display_type" name="display_type" style="width: 165px; margin: 10px;" disabled>
+                    <option value="plotzero">Plot Zero Interface</option>
+                    <!--<option value="all">Show all charts</option>-->
+                    <option value="favorites">Favorites</option>
+                </select>
+            </div>
+            <input type="button" id="btnSubmit" style="margin: 10px; margin-left: 50px;" value="Search" />
+        </div>
+        <div id="error_dialog" class="modal" style="text-align: center">
+            <div class="modal-content">
+                <p id="error_msg" style="font-size: medium;"></p>
+                <div class="row">
+                    <input type="button" id="errorDialogButton" value="OK" style="width: 50px" />
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 40px; margin-bottom: 40px; margin-left: 10px; margin-right: 10px; width: 100%;">
+            {# Dataset list#}
+            <div class="card card-chart" style="margin-right: 15px; width: 370px;">
+                <div class="card-header" id="datalistHeader" style="padding: 5px;">
+                    <h4 class="card-title" style="margin: 0px;">Dataset List</h4>
+                </div>
+                <div class="card-body" id="datalistBody">
+                    <div class="panel-body">
+<!--                        <ul class="list-group" id="list_group" style="max-width: 350px;">-->
+                        <ul class="list-group" id="list_group">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            {# Tab for Summary Dashboard, Graph Information, Graph Status & Sample Data#}
+            <!--<max-width: max-content>-->
+            <div class="card card-chart card-body" style="font-size: 20px; width: 600px;">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="status-tab" data-toggle="tab" href="#status" role="tab" aria-controls="status" aria-selected="false">Graph Status</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="summary-tab" data-toggle="tab" href="#summary" role="tab" aria-controls="summary" aria-selected="true">Summary Dashboard</a>
+                    </li>
+                    <!--<li class="nav-item">
+                        <a class="nav-link" id="graph_info-tab" data-toggle="tab" href="#graph_info" role="tab" aria-controls="graph_info" aria-selected="false">Graph Information</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="sample-tab" data-toggle="tab" href="#sample" role="tab" aria-controls="sample" aria-selected="false">Sample Data</a>
+                    </li>-->
+                </ul>
+
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="status" role="tabpanel" aria-labelledby="status-tab">
+                        {% set actual_dataset_name = 'Dataset Name : ' ~ dataset_name %}
+                        <h5 id="dataset_name_placeholder" style="text-align: left; font-weight: 700; padding-top: 10px;">{{ actual_dataset_name }}</h5>
+                        <div class="card card-body" id="progressBody">
+                            <div id="progress" class="progress">
+                                <div id="progress_bar" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                     aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                             <a href="#" id="download_link">
+                                 <h6 style="text-align: left">Download Dataset</h6>
+                             </a>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="summary" role="tabpanel" aria-labelledby="summary-tab" style="max-height: 390px; max-width: 710px; overflow: auto;">
+                        <table id="summaryTable" class="summaryTable" style="font-size: xx-small">
+                            <tr>
+                                <td style="font-weight: bold; font-size: small;">Attributes/Statistics</td>
+                                {% for key, value in summary_attributes.iteritems() %}
+                                <th style="font-weight: bold;">{{ value }}</th>
+                                {% endfor %}
+                            </tr>
+                            {% for attr, values in summary.items() %}
+                            <tr>
+                                <th style="font-weight: bold;">{{ attr }}</th>
+                                {% for summ_attr, value in values.items() %}
+                                <td>{{ value }}</td>
+                                {% endfor %}
+                            </tr>
+                            {% endfor %}
+                        </table>
+                    </div>
+                    <div class="tab-pane fade" id="graph_info" role="tabpanel" aria-labelledby="graph_info-tab">
+                        <div class="spinner-border m-5" style="width: 10rem; height: 10rem; font-size: 55px;" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="sample" role="tabpanel" aria-labelledby="sample-tab" style="max-height:390px; max-width: 710px; overflow:auto;">
+                        Sample Data
+                    </div>
+                </div>
+
+            </div>
+            {# Query Builder #}
+            <div class="card card-chart" id="queryCard" style="margin-left: 15px; width: 500px;">
+                <div class="card-header" id="queryHeader" style="padding: 5px">
+                    <h4 class="card-title" style="margin: 0px;">Query Builder</h4>
+                </div>
+                <div class="card-body" id="queryBody" style="display: grid;">
+                    {# Attributes - Schema #}
+                    <h5 style="text-align: left; font-weight: 700; margin: 0px;">Attributes</h5>
+                    <select id="attributesSchema" class="select2" multiple style="width: 450px">
+                        {% for attr, values in schema_attributes.items() %}
+                        {% set actual_text = attr ~ ':' ~ attr %}
+                        <option class="l1" value="{{ actual_text }}">{{ attr }}</option>
+                        {% for sub_attr, value in values.items() %}
+                        {% set actual_text = attr ~ ':' ~ value %}
+                        <option class="l2" value="{{ actual_text }}">{{ actual_text }}</option>
+                        {% endfor %}
+                        {% endfor %}
+                    </select>
+                    {# Graph Type #}
+                    <h5 style="text-align: left; font-weight: 700; margin: 0px;">Graph Type</h5>
+                    <select id="graphType" class="select2" multiple style="width: 450px">
+                        <option>bargraph</option>
+                        <option>groupedBargraph</option>
+                        <option>heatmap</option>
+                        <option>histogram</option>
+                        <option>scatter</option>
+                        <option>boxplot</option>
+                    </select>
+                    {# Order By #}
+                    <h5 style="text-align: left; font-weight: 700; margin: 0px;">Order By (Default - Descending)</h5>
+                    <select id="orderType" class="select2" multiple style="width: 450px">
+                        <option>Score</option>
+                        <option>Support</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+    </form>
+
+    <!--   Core JS Files   -->
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+
+    <script src="{{ url_for('static', filename='js/select2.js') }}"></script>
+
+    <script src="{{ url_for('static', filename='js/fileSummary.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+</div>
+<div id="loading">
+    <div class="loader"></div>
+</div>
+</body>
+</html>

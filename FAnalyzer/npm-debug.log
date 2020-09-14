@@ -1,0 +1,194 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/opt/node/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'jsonlint',
+1 verbose cli   '-g' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.3
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'jsonlint', null ]
+7 verbose cache add spec jsonlint
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'jsonlint',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'jsonlint',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 silly addNamed jsonlint@*
+10 verbose addNamed "*" is a valid semver range for jsonlint
+11 silly addNameRange { name: 'jsonlint', range: '*', hasData: false }
+12 silly mapToRegistry name jsonlint
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/jsonlint
+16 verbose addNameRange registry:https://registry.npmjs.org/jsonlint not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/jsonlint
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 8:42:05 AM
+20 verbose request id f7a3508e86e860cd
+21 http request GET https://registry.npmjs.org/jsonlint
+22 http 200 https://registry.npmjs.org/jsonlint
+23 verbose headers { date: 'Tue, 25 Sep 2018 12:42:05 GMT',
+23 verbose headers   'content-type': 'application/json; charset=UTF-8',
+23 verbose headers   'transfer-encoding': 'chunked',
+23 verbose headers   connection: 'keep-alive',
+23 verbose headers   'set-cookie': [ '__cfduid=d9425ee9fbdad9306671f483b94547f0b1537879325; expires=Wed, 25-Sep-19 12:42:05 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+23 verbose headers   'cf-cache-status': 'HIT',
+23 verbose headers   'cache-control': 'max-age=300',
+23 verbose headers   'cf-ray': '45fd9199b95a924e-EWR',
+23 verbose headers   etag: 'W/"f14fd55eb4d15076ca9b7052aa52eb7b"',
+23 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+23 verbose headers   'last-modified': 'Sun, 27 May 2018 05:42:53 GMT',
+23 verbose headers   vary: 'accept-encoding, accept',
+23 verbose headers   server: 'cloudflare',
+23 verbose headers   'content-encoding': 'gzip' }
+24 silly get cb [ 200,
+24 silly get   { date: 'Tue, 25 Sep 2018 12:42:05 GMT',
+24 silly get     'content-type': 'application/json; charset=UTF-8',
+24 silly get     'transfer-encoding': 'chunked',
+24 silly get     connection: 'keep-alive',
+24 silly get     'set-cookie': [ '__cfduid=d9425ee9fbdad9306671f483b94547f0b1537879325; expires=Wed, 25-Sep-19 12:42:05 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+24 silly get     'cf-cache-status': 'HIT',
+24 silly get     'cache-control': 'max-age=300',
+24 silly get     'cf-ray': '45fd9199b95a924e-EWR',
+24 silly get     etag: 'W/"f14fd55eb4d15076ca9b7052aa52eb7b"',
+24 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+24 silly get     'last-modified': 'Sun, 27 May 2018 05:42:53 GMT',
+24 silly get     vary: 'accept-encoding, accept',
+24 silly get     server: 'cloudflare',
+24 silly get     'content-encoding': 'gzip' } ]
+25 verbose get saving jsonlint to /home/ba/.npm/registry.npmjs.org/jsonlint/.cache.json
+26 verbose makeDirectory /home/ba/.npm creation not in flight; initializing
+27 silly makeDirectory /home/ba/.npm uid: 1001 gid: 1001
+28 silly addNameRange number 2 { name: 'jsonlint', range: '*', hasData: true }
+29 silly addNameRange versions [ 'jsonlint',
+29 silly addNameRange   [ '1.0.0',
+29 silly addNameRange     '1.0.1',
+29 silly addNameRange     '1.1.0',
+29 silly addNameRange     '1.1.1',
+29 silly addNameRange     '1.2.0',
+29 silly addNameRange     '1.2.1',
+29 silly addNameRange     '1.3.0',
+29 silly addNameRange     '1.3.1',
+29 silly addNameRange     '1.3.2',
+29 silly addNameRange     '1.4.0',
+29 silly addNameRange     '1.4.1',
+29 silly addNameRange     '1.5.0',
+29 silly addNameRange     '1.5.1',
+29 silly addNameRange     '1.6.0',
+29 silly addNameRange     '1.6.1',
+29 silly addNameRange     '1.6.2',
+29 silly addNameRange     '1.6.3' ] ]
+30 silly addNamed jsonlint@1.6.3
+31 verbose addNamed "1.6.3" is a plain semver version for jsonlint
+32 silly mapToRegistry name jsonlint
+33 silly mapToRegistry using default registry
+34 silly mapToRegistry registry https://registry.npmjs.org/
+35 silly mapToRegistry uri https://registry.npmjs.org/jsonlint
+36 verbose addRemoteTarball https://registry.npmjs.org/jsonlint/-/jsonlint-1.6.3.tgz not in flight; adding
+37 verbose addRemoteTarball [ 'https://registry.npmjs.org/jsonlint/-/jsonlint-1.6.3.tgz',
+37 verbose addRemoteTarball   'cb5e31efc0b78291d0d862fbef05900adf212988' ]
+38 info retry fetch attempt 1 at 8:42:05 AM
+39 info attempt registry request try #1 at 8:42:05 AM
+40 http fetch GET https://registry.npmjs.org/jsonlint/-/jsonlint-1.6.3.tgz
+41 http fetch 200 https://registry.npmjs.org/jsonlint/-/jsonlint-1.6.3.tgz
+42 silly fetchAndShaCheck shasum cb5e31efc0b78291d0d862fbef05900adf212988
+43 verbose addTmpTarball /tmp/npm-8992-c5714439/registry.npmjs.org/jsonlint/-/jsonlint-1.6.3.tgz not in flight; adding
+44 verbose addTmpTarball already have metadata; skipping unpack for jsonlint@1.6.3
+45 silly cache afterAdd jsonlint@1.6.3
+46 verbose afterAdd /home/ba/.npm/jsonlint/1.6.3/package/package.json not in flight; writing
+47 verbose afterAdd /home/ba/.npm/jsonlint/1.6.3/package/package.json written
+48 silly install resolved [ { author:
+48 silly install resolved      { name: 'Zach Carter',
+48 silly install resolved        email: 'zach@carter.name',
+48 silly install resolved        url: 'http://zaa.ch' },
+48 silly install resolved     name: 'jsonlint',
+48 silly install resolved     description: 'Validate JSON',
+48 silly install resolved     keywords: [ 'json', 'validation', 'lint', 'jsonlint' ],
+48 silly install resolved     version: '1.6.3',
+48 silly install resolved     preferGlobal: true,
+48 silly install resolved     repository: { type: 'git', url: 'git://github.com/zaach/jsonlint.git' },
+48 silly install resolved     bugs: { url: 'http://github.com/zaach/jsonlint/issues' },
+48 silly install resolved     main: 'lib/jsonlint.js',
+48 silly install resolved     bin: { jsonlint: 'lib/cli.js' },
+48 silly install resolved     engines: { node: '>= 0.6' },
+48 silly install resolved     dependencies: { nomnom: '^1.5.x', JSV: '^4.0.x' },
+48 silly install resolved     devDependencies: { test: '*', jison: '*', 'uglify-js': '*' },
+48 silly install resolved     scripts: { test: 'node test/all-tests.js' },
+48 silly install resolved     homepage: 'http://zaach.github.com/jsonlint/',
+48 silly install resolved     optionalDependencies: {},
+48 silly install resolved     gitHead: '843cad2bbd87139bb75806c1c24fe0d821a41ff4',
+48 silly install resolved     _id: 'jsonlint@1.6.3',
+48 silly install resolved     _npmVersion: '5.5.1',
+48 silly install resolved     _nodeVersion: '8.5.0',
+48 silly install resolved     _npmUser: { name: 'zaach', email: 'zack.carter@gmail.com' },
+48 silly install resolved     maintainers: [ [Object] ],
+48 silly install resolved     dist:
+48 silly install resolved      { integrity: 'sha512-jMVTMzP+7gU/IyC6hvKyWpUU8tmTkK5b3BPNuMI9U8Sit+YAWLlZwB6Y6YrdCxfg2kNz05p3XY3Bmm4m26Nv3A==',
+48 silly install resolved        shasum: 'cb5e31efc0b78291d0d862fbef05900adf212988',
+48 silly install resolved        tarball: 'https://registry.npmjs.org/jsonlint/-/jsonlint-1.6.3.tgz',
+48 silly install resolved        fileCount: 49,
+48 silly install resolved        unpackedSize: 63069 },
+48 silly install resolved     directories: {},
+48 silly install resolved     _npmOperationalInternal:
+48 silly install resolved      { host: 's3://npm-registry-packages',
+48 silly install resolved        tmp: 'tmp/jsonlint_1.6.3_1519250216813_0.33330309309916717' },
+48 silly install resolved     _shasum: 'cb5e31efc0b78291d0d862fbef05900adf212988',
+48 silly install resolved     _resolved: 'https://registry.npmjs.org/jsonlint/-/jsonlint-1.6.3.tgz',
+48 silly install resolved     _from: 'jsonlint@*' } ]
+49 info install jsonlint@1.6.3 into /usr/local/lib
+50 info installOne jsonlint@1.6.3
+51 verbose installOne of jsonlint to /usr/local/lib not in flight; installing
+52 verbose makeDirectory /home/ba/.npm/_locks creation not in flight; initializing
+53 silly makeDirectory /home/ba/.npm/_locks uid: 1001 gid: 1001
+54 verbose lock using /home/ba/.npm/_locks/jsonlint-4886d754fb685f69.lock for /usr/local/lib/node_modules/jsonlint
+55 silly install write writing jsonlint 1.6.3 to /usr/local/lib/node_modules/jsonlint
+56 verbose unbuild lib/node_modules/jsonlint
+57 silly gentlyRm /usr/local/lib/node_modules/jsonlint is being purged from base /usr/local
+58 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/jsonlint
+59 verbose tar unpack /home/ba/.npm/jsonlint/1.6.3/package.tgz
+60 verbose tar unpacking to /usr/local/lib/node_modules/jsonlint
+61 silly gentlyRm /usr/local/lib/node_modules/jsonlint is being purged
+62 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/jsonlint
+63 silly gunzTarPerm modes [ '775', '664' ]
+64 error tar.unpack untar error /home/ba/.npm/jsonlint/1.6.3/package.tgz
+65 verbose unlock done using /home/ba/.npm/_locks/jsonlint-4886d754fb685f69.lock for /usr/local/lib/node_modules/jsonlint
+66 verbose fstream_path /usr/local/lib/node_modules/jsonlint
+67 verbose fstream_type Directory
+68 verbose fstream_class DirWriter
+69 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/jsonlint'
+69 verbose stack     at Error (native)
+70 verbose fstream_stack /opt/node/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+70 verbose fstream_stack /opt/node/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+70 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+71 verbose cwd /home/ba/FAnalyzer
+72 error Linux 3.13.0-79-generic
+73 error argv "/opt/node/bin/node" "/usr/local/bin/npm" "install" "jsonlint" "-g"
+74 error node v4.2.3
+75 error npm  v2.14.7
+76 error path /usr/local/lib/node_modules/jsonlint
+77 error code EACCES
+78 error errno -13
+79 error syscall mkdir
+80 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/jsonlint'
+80 error     at Error (native)
+80 error  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/jsonlint']
+80 error   errno: -13,
+80 error   code: 'EACCES',
+80 error   syscall: 'mkdir',
+80 error   path: '/usr/local/lib/node_modules/jsonlint',
+80 error   fstream_type: 'Directory',
+80 error   fstream_path: '/usr/local/lib/node_modules/jsonlint',
+80 error   fstream_class: 'DirWriter',
+80 error   fstream_stack:
+80 error    [ '/opt/node/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+80 error      '/opt/node/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+80 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+81 error Please try running this command again as root/Administrator.
+82 verbose exit [ -13, true ]
+83 verbose unbuild lib/node_modules/jsonlint
+84 silly gentlyRm /usr/local/lib/node_modules/jsonlint is being purged from base /usr/local
+85 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/jsonlint

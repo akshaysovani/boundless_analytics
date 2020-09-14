@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Plottypes</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='web.css') }}"> -->
+    <link rel="stylesheet" href="/css/web.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!--<h3>Hello, Testing...</h3>-->
+        {% if results.numFound > 0 %}
+        <h3>Dataset: {{ results.dataset }}</h3>
+        {% endif %}
+        <!-- <br /> -->
+        <!-- <p>Num of plot types: {{ results.numFound }} </p>
+        <p>start: {{results.start}} </p> -->
+        {{ pagination.info }}
+        <!-- {{ pagination.links }} -->
+    
+        <br />
+        {% for result in results.docs %}
+        <div class="row">
+            <div class="col-xs-2">
+                <a target="_blank" href="{{ result.url[0]|replace("foreveranalytics.com", "foreveranalytics.com:8080") }}">
+                    <!-- <img class="list-icon-graph" src="/hist-icon.png" alt=""> -->
+                    {% if result.type[0] == 'bargraph' %}
+                    <img class="chart-icon-graph" src="/bargraph-icon.png" alt="">  
+                    {% elif result.type[0] == 'heatmap' %}
+                    <img class="chart-icon-graph" src="/heatmap-icon.png" alt="">  
+                    {% elif result.type[0] == 'histogram' %}
+                    <img class="chart-icon-graph" src="/hist-icon.png" alt="">  
+                    {% elif result.type[0] == 'scatter' %}
+                    <img class="chart-icon-graph" src="/scatter-icon.png" alt="">  
+                    {% elif result.type[0] == 'boxplot' %}
+                    <img class="chart-icon-graph" src="/boxplot-icon.png" alt="">
+                    {% endif %}
+                </a>
+            </div>
+            <div class="col-xs-10">
+                <table>
+                    <!--<tr>Plot type: {{ result.plottype[0] }}</tr> <br>-->
+                    {% if result.y %}
+                    <tr>Plot type:
+                        <!-- <a href="{{ url_for('chartSearchForm') }}?dataset={{ results.docs[0].dataset[0] }}&plottype={{ result.plottype[0] }}&optradio={{ results.optradio }}">{{ result.y[0] }} vs. {{ result.x[0] }}</a> -->
+                        <a href="{{ url_for('chartSearchForm') }}?dataset={{ results.docs[0].dataset[0] }}&plottype={{ result.plottype[0] }}">{{ result.y[0] }} vs. {{ result.x[0] }}</a>
+                    </tr>
+                    <br> {% else %}
+                    <tr>Plot type:
+                        <!-- <a href="{{ url_for('chartSearchForm') }}?dataset={{ results.docs[0].dataset[0] }}&plottype={{ result.plottype[0] }}&optradio={{ results.optradio }}">{{ result.x[0] }}</a> -->
+                        <a href="{{ url_for('chartSearchForm') }}?dataset={{ results.docs[0].dataset[0] }}&plottype={{ result.plottype[0] }}">{{ result.x[0] }}</a>
+                    </tr>
+                    <br> {% endif %}
+                    <tr>Num of plots: {{ result.nplots[0] }} </tr>
+                    <br>
+                    <!--<tr>x: {{ result.x[0] }} </tr> <br> 
+                                        {% if result.y %}
+                                        <tr>y: {{ result.y[0] }} </tr> <br> 
+                                        {% endif %} -->
+                    <tr>Metagini: {{ result.metagini }} </tr>
+                    <br>
+                    <tr>Variance: {{ result.variance }} </tr>
+                    <br>
+                    <tr>
+                        <!-- Mark Five-Number Summary: {{ result.stats}} </tr> -->
+                        Score Five-Number Summary: {{ result.stats}} </tr>
+                    <br>
+                    <br><br>
+                </table>
+            </div>
+        </div>
+        {% endfor %}
+
+
+        <!-- <ul>
+            {% for result in results.docs %}
+            <li>
+                <img class="list-icon-graph" src="/list-icon.png" alt="">
+                <div>
+                    <table>
+                        <tr>Plot type: {{ result.plottype[0] }}</tr> <br>
+
+
+                        {% if result.y %}
+                            <tr>Plot type: <a href="{{ url_for('chartSearchForm') }}?dataset={{ results.docs[0].dataset[0] }}&plottype={{ result.plottype[0] }}&optradio={{ results.optradio }}">{{ result.y[0] }} vs. {{ result.x[0] }}</a></tr> <br> 
+                        {% else %}
+                            <tr>Plot type: <a href="{{ url_for('chartSearchForm') }}?dataset={{ results.docs[0].dataset[0] }}&plottype={{ result.plottype[0] }}&optradio={{ results.optradio }}">{{ result.x[0] }}</a></tr> <br>
+                        {% endif %}
+                        <tr>Num of plots: {{ result.nplots[0] }} </tr> <br>
+
+
+                        <tr>x: {{ result.x[0] }} </tr> <br> 
+                        {% if result.y %}
+                        <tr>y: {{ result.y[0] }} </tr> <br> 
+                        {% endif %}
+
+
+                        <tr>Metagini: {{ result.metagini }} </tr> <br>
+                        <tr>Variance: {{ result.variance }} </tr> <br>
+                        <tr><a target="_blank" href="{{ result.url[0] }}">Mark</a> (five-number summary): {{ result.stats}} </tr> <br> <br>
+                    </table>
+                </div>
+            </li>
+            {% endfor %}
+        </ul> -->
+        
+        <!-- <div class="container">
+            <ul class="pagination">
+                {% for idx in results.pages %} 
+                    {% if idx == results.page %}
+                        <li class="active"><a href="{{ url_for('searchPlottypes') }}{{idx}}">{{idx}}</a></li>
+                    {% else %}
+                        <li><a href="{{ url_for('searchPlottypes') }}{{idx}}{{ results.searchformToURL}}">{{idx}}</a></li>
+                    {% endif %} 
+                {% endfor %}
+            </ul>
+        </div> -->
+    
+        {{ pagination.links }}
+    
+        <br />
+        <a href="/"><b>Home</b></a>
+    </div>
+</body>
+
+</html>

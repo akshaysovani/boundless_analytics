@@ -1,0 +1,10 @@
+#!/bin/bash
+# My first script
+
+#alias proj="cd /home/ba/FAnalyzer/"
+
+# Get the argument
+table_name=("$@")
+
+/usr/bin/python3 /home/ba/FAnalyzer/progressbar.py $table_name
+echo "Done running progressbar script"

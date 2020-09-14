@@ -1,0 +1,2959 @@
+loading database schema:  wine.json
+loading table:  wine.csv
+recoding items in table:  wine
+Including:  source  =  direct
+Including:  source  =  search
+Including:  gender  =  man
+Including:  gender  =  woman
+Including:  location  =  California
+Including:  location  =  Florida
+Including:  location  =  NJ
+Including:  location  =  NY
+Including:  location  =  Texas
+Including:  day  =  Friday
+Including:  day  =  Monday
+Including:  day  =  Saturday
+Including:  day  =  Sunday
+Including:  day  =  Thursday
+Including:  day  =  Tuesday
+Including:  day  =  Wed
+Including:  month  =  1
+Including:  month  =  10
+Including:  month  =  11
+Including:  month  =  12
+Including:  month  =  2
+Including:  month  =  3
+Including:  month  =  4
+Including:  month  =  5
+Including:  month  =  6
+Including:  month  =  7
+Including:  month  =  8
+Including:  month  =  9
+running ALPINE algorithm for table:  wine  with absolute minsup:  1030.0
+1 [] 102974
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+2 [('source', 'search')] 92685
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+3 [('gender', 'woman')] 51534
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+4 [('gender', 'man')] 51440
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+5 [('gender', 'woman'), ('source', 'search')] 46382
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+6 [('gender', 'man'), ('source', 'search')] 46303
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+7 [('location', 'Texas')] 20764
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+8 [('location', 'California')] 20680
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+9 [('location', 'NJ')] 20559
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+10 [('location', 'NY')] 20558
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+11 [('location', 'Florida')] 20413
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+12 [('location', 'Texas'), ('source', 'search')] 18725
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+13 [('location', 'California'), ('source', 'search')] 18629
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+14 [('location', 'NY'), ('source', 'search')] 18554
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+15 [('location', 'NJ'), ('source', 'search')] 18440
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+16 [('location', 'Florida'), ('source', 'search')] 18337
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+17 [('day', 'Saturday')] 14944
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+18 [('day', 'Friday')] 14763
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+19 [('day', 'Thursday')] 14757
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+20 [('day', 'Sunday')] 14683
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+21 [('day', 'Wed')] 14677
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+22 [('day', 'Tuesday')] 14598
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+23 [('day', 'Monday')] 14552
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+24 [('day', 'Saturday'), ('source', 'search')] 13489
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+25 [('day', 'Friday'), ('source', 'search')] 13301
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+26 [('day', 'Thursday'), ('source', 'search')] 13260
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+27 [('day', 'Sunday'), ('source', 'search')] 13230
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+28 [('day', 'Wed'), ('source', 'search')] 13212
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+29 [('day', 'Tuesday'), ('source', 'search')] 13122
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+30 [('day', 'Monday'), ('source', 'search')] 13071
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+31 [('location', 'California'), ('gender', 'woman')] 10423
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+32 [('location', 'Texas'), ('gender', 'woman')] 10382
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+33 [('location', 'Texas'), ('gender', 'man')] 10382
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+34 [('location', 'NY'), ('gender', 'man')] 10340
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+35 [('location', 'NJ'), ('gender', 'man')] 10337
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+36 [('location', 'Florida'), ('gender', 'woman')] 10289
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+37 [('source', 'direct')] 10289
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+38 [('location', 'California'), ('gender', 'man')] 10257
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+39 [('location', 'NJ'), ('gender', 'woman')] 10222
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+40 [('location', 'NY'), ('gender', 'woman')] 10218
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+41 [('location', 'Florida'), ('gender', 'man')] 10124
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+42 [('location', 'California'), ('gender', 'woman'), ('source', 'search')] 9396
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+43 [('location', 'Texas'), ('gender', 'woman'), ('source', 'search')] 9366
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+44 [('location', 'Texas'), ('gender', 'man'), ('source', 'search')] 9359
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+45 [('location', 'NJ'), ('gender', 'man'), ('source', 'search')] 9288
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+46 [('location', 'NY'), ('gender', 'man'), ('source', 'search')] 9288
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+47 [('location', 'NY'), ('gender', 'woman'), ('source', 'search')] 9266
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+48 [('location', 'California'), ('gender', 'man'), ('source', 'search')] 9233
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+49 [('location', 'Florida'), ('gender', 'woman'), ('source', 'search')] 9202
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+50 [('location', 'NJ'), ('gender', 'woman'), ('source', 'search')] 9152
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+51 [('location', 'Florida'), ('gender', 'man'), ('source', 'search')] 9135
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+52 [('month', '2')] 8694
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+53 [('month', '6')] 8671
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+54 [('month', '5')] 8670
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+55 [('month', '4')] 8596
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+56 [('month', '9')] 8590
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+57 [('month', '7')] 8579
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+58 [('month', '1')] 8574
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+59 [('month', '3')] 8570
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+60 [('month', '10')] 8560
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+61 [('month', '12')] 8496
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+62 [('month', '11')] 8492
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+63 [('month', '8')] 8482
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+64 [('month', '2'), ('source', 'search')] 7836
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+65 [('month', '5'), ('source', 'search')] 7811
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+66 [('month', '6'), ('source', 'search')] 7801
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+67 [('month', '7'), ('source', 'search')] 7739
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+68 [('month', '10'), ('source', 'search')] 7732
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+69 [('month', '1'), ('source', 'search')] 7719
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+70 [('month', '9'), ('source', 'search')] 7705
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+71 [('month', '3'), ('source', 'search')] 7704
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+72 [('month', '4'), ('source', 'search')] 7692
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+73 [('month', '12'), ('source', 'search')] 7688
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+74 [('month', '8'), ('source', 'search')] 7661
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+75 [('month', '11'), ('source', 'search')] 7597
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+76 [('day', 'Saturday'), ('gender', 'man')] 7592
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+77 [('day', 'Thursday'), ('gender', 'woman')] 7474
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+78 [('day', 'Wed'), ('gender', 'woman')] 7410
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+79 [('day', 'Friday'), ('gender', 'man')] 7397
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+80 [('day', 'Friday'), ('gender', 'woman')] 7366
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+81 [('day', 'Saturday'), ('gender', 'woman')] 7352
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+82 [('day', 'Sunday'), ('gender', 'woman')] 7345
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+83 [('day', 'Sunday'), ('gender', 'man')] 7338
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+84 [('day', 'Tuesday'), ('gender', 'woman')] 7301
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+85 [('day', 'Tuesday'), ('gender', 'man')] 7297
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+86 [('day', 'Monday'), ('gender', 'woman')] 7286
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+87 [('day', 'Thursday'), ('gender', 'man')] 7283
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+88 [('day', 'Wed'), ('gender', 'man')] 7267
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+89 [('day', 'Monday'), ('gender', 'man')] 7266
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+90 [('day', 'Saturday'), ('gender', 'man'), ('source', 'search')] 6826
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+91 [('day', 'Thursday'), ('gender', 'woman'), ('source', 'search')] 6720
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+92 [('day', 'Wed'), ('gender', 'woman'), ('source', 'search')] 6694
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+93 [('day', 'Friday'), ('gender', 'man'), ('source', 'search')] 6667
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+94 [('day', 'Saturday'), ('gender', 'woman'), ('source', 'search')] 6663
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+95 [('day', 'Sunday'), ('gender', 'man'), ('source', 'search')] 6644
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+96 [('day', 'Friday'), ('gender', 'woman'), ('source', 'search')] 6634
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+97 [('day', 'Sunday'), ('gender', 'woman'), ('source', 'search')] 6586
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+98 [('day', 'Tuesday'), ('gender', 'man'), ('source', 'search')] 6576
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+99 [('day', 'Tuesday'), ('gender', 'woman'), ('source', 'search')] 6546
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+100 [('day', 'Thursday'), ('gender', 'man'), ('source', 'search')] 6540
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+101 [('day', 'Monday'), ('gender', 'woman'), ('source', 'search')] 6539
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+102 [('day', 'Monday'), ('gender', 'man'), ('source', 'search')] 6532
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+103 [('day', 'Wed'), ('gender', 'man'), ('source', 'search')] 6518
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+104 [('source', 'direct'), ('gender', 'woman')] 5152
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+105 [('source', 'direct'), ('gender', 'man')] 5137
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+106 [('month', '5'), ('gender', 'woman')] 4446
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+107 [('month', '6'), ('gender', 'man')] 4436
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+108 [('month', '2'), ('gender', 'woman')] 4388
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+109 [('month', '3'), ('gender', 'man')] 4344
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+110 [('month', '4'), ('gender', 'man')] 4330
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+111 [('month', '7'), ('gender', 'woman')] 4322
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+112 [('month', '10'), ('gender', 'woman')] 4316
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+113 [('month', '9'), ('gender', 'woman')] 4313
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+114 [('month', '2'), ('gender', 'man')] 4306
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+115 [('month', '1'), ('gender', 'man')] 4303
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+116 [('month', '9'), ('gender', 'man')] 4277
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+117 [('month', '1'), ('gender', 'woman')] 4271
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+118 [('month', '4'), ('gender', 'woman')] 4266
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+119 [('month', '12'), ('gender', 'woman')] 4259
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+120 [('month', '7'), ('gender', 'man')] 4257
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+121 [('month', '8'), ('gender', 'woman')] 4256
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+122 [('month', '11'), ('gender', 'man')] 4256
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+123 [('month', '10'), ('gender', 'man')] 4244
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+124 [('month', '12'), ('gender', 'man')] 4237
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+125 [('month', '11'), ('gender', 'woman')] 4236
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+126 [('month', '6'), ('gender', 'woman')] 4235
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+127 [('month', '3'), ('gender', 'woman')] 4226
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+128 [('month', '8'), ('gender', 'man')] 4226
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+129 [('month', '5'), ('gender', 'man')] 4224
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+130 [('month', '5'), ('gender', 'woman'), ('source', 'search')] 4013
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+131 [('month', '6'), ('gender', 'man'), ('source', 'search')] 4008
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+132 [('month', '2'), ('gender', 'woman'), ('source', 'search')] 3936
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+133 [('month', '7'), ('gender', 'woman'), ('source', 'search')] 3909
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+134 [('month', '3'), ('gender', 'man'), ('source', 'search')] 3905
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+135 [('month', '2'), ('gender', 'man'), ('source', 'search')] 3900
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+136 [('month', '10'), ('gender', 'woman'), ('source', 'search')] 3892
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+137 [('month', '4'), ('gender', 'man'), ('source', 'search')] 3884
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+138 [('month', '9'), ('gender', 'woman'), ('source', 'search')] 3879
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+139 [('month', '1'), ('gender', 'man'), ('source', 'search')] 3871
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+140 [('month', '1'), ('gender', 'woman'), ('source', 'search')] 3848
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+141 [('month', '12'), ('gender', 'woman'), ('source', 'search')] 3845
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+142 [('month', '12'), ('gender', 'man'), ('source', 'search')] 3843
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+143 [('month', '8'), ('gender', 'woman'), ('source', 'search')] 3841
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+144 [('month', '10'), ('gender', 'man'), ('source', 'search')] 3840
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+145 [('month', '7'), ('gender', 'man'), ('source', 'search')] 3830
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+146 [('month', '9'), ('gender', 'man'), ('source', 'search')] 3826
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+147 [('month', '8'), ('gender', 'man'), ('source', 'search')] 3820
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+148 [('month', '11'), ('gender', 'woman'), ('source', 'search')] 3819
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+149 [('month', '4'), ('gender', 'woman'), ('source', 'search')] 3808
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+150 [('month', '3'), ('gender', 'woman'), ('source', 'search')] 3799
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+151 [('month', '5'), ('gender', 'man'), ('source', 'search')] 3798
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+152 [('month', '6'), ('gender', 'woman'), ('source', 'search')] 3793
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+153 [('month', '11'), ('gender', 'man'), ('source', 'search')] 3778
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+154 [('day', 'Friday'), ('location', 'Texas')] 3080
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+155 [('day', 'Saturday'), ('location', 'NY')] 3053
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+156 [('day', 'Saturday'), ('location', 'Texas')] 3050
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+157 [('day', 'Wed'), ('location', 'California')] 3031
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+158 [('day', 'Sunday'), ('location', 'Florida')] 3013
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+159 [('day', 'Monday'), ('location', 'Florida')] 3010
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+160 [('day', 'Friday'), ('location', 'NJ')] 2999
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+161 [('day', 'Thursday'), ('location', 'California')] 2998
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+162 [('day', 'Tuesday'), ('location', 'Texas')] 2995
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+163 [('day', 'Saturday'), ('location', 'NJ')] 2984
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+164 [('day', 'Thursday'), ('location', 'NJ')] 2976
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+165 [('day', 'Wed'), ('location', 'NJ')] 2974
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+166 [('day', 'Tuesday'), ('location', 'California')] 2970
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+167 [('day', 'Saturday'), ('location', 'Florida')] 2963
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+168 [('day', 'Thursday'), ('location', 'NY')] 2960
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+169 [('day', 'Friday'), ('location', 'NY')] 2950
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+170 [('day', 'Sunday'), ('location', 'California')] 2934
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+171 [('day', 'Friday'), ('location', 'California')] 2933
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+172 [('day', 'Wed'), ('location', 'NY')] 2932
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+173 [('day', 'Thursday'), ('location', 'Texas')] 2922
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+174 [('day', 'Sunday'), ('location', 'NY')] 2921
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+175 [('day', 'Monday'), ('location', 'California')] 2920
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+176 [('day', 'Sunday'), ('location', 'Texas')] 2919
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+177 [('day', 'Thursday'), ('location', 'Florida')] 2901
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+178 [('day', 'Wed'), ('location', 'Texas')] 2899
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+179 [('day', 'Monday'), ('location', 'Texas')] 2899
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+180 [('day', 'Sunday'), ('location', 'NJ')] 2896
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+181 [('day', 'Saturday'), ('location', 'California')] 2894
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+182 [('day', 'Tuesday'), ('location', 'Florida')] 2884
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+183 [('day', 'Tuesday'), ('location', 'NY')] 2880
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+184 [('day', 'Tuesday'), ('location', 'NJ')] 2869
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+185 [('day', 'Monday'), ('location', 'NY')] 2862
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+186 [('day', 'Monday'), ('location', 'NJ')] 2861
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+187 [('day', 'Wed'), ('location', 'Florida')] 2841
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+188 [('day', 'Friday'), ('location', 'Florida')] 2801
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+189 [('day', 'Friday'), ('location', 'Texas'), ('source', 'search')] 2772
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+190 [('day', 'Saturday'), ('location', 'NY'), ('source', 'search')] 2763
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+191 [('day', 'Saturday'), ('location', 'Texas'), ('source', 'search')] 2757
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+192 [('day', 'Monday'), ('location', 'Florida'), ('source', 'search')] 2728
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+193 [('day', 'Wed'), ('location', 'California'), ('source', 'search')] 2727
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+194 [('day', 'Tuesday'), ('location', 'Texas'), ('source', 'search')] 2700
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+195 [('day', 'Friday'), ('location', 'NJ'), ('source', 'search')] 2700
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+196 [('day', 'Tuesday'), ('location', 'California'), ('source', 'search')] 2695
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+197 [('day', 'Sunday'), ('location', 'Florida'), ('source', 'search')] 2689
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+198 [('day', 'Thursday'), ('location', 'NJ'), ('source', 'search')] 2683
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+199 [('day', 'Friday'), ('location', 'NY'), ('source', 'search')] 2677
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+200 [('day', 'Thursday'), ('location', 'California'), ('source', 'search')] 2668
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+201 [('day', 'Saturday'), ('location', 'Florida'), ('source', 'search')] 2667
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+202 [('day', 'Saturday'), ('location', 'NJ'), ('source', 'search')] 2663
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+203 [('day', 'Thursday'), ('location', 'NY'), ('source', 'search')] 2662
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+204 [('day', 'Wed'), ('location', 'NJ'), ('source', 'search')] 2660
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+205 [('day', 'Wed'), ('location', 'NY'), ('source', 'search')] 2658
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+206 [('day', 'Sunday'), ('location', 'California'), ('source', 'search')] 2656
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+207 [('day', 'Sunday'), ('location', 'Texas'), ('source', 'search')] 2643
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+208 [('day', 'Saturday'), ('location', 'California'), ('source', 'search')] 2639
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+209 [('day', 'Thursday'), ('location', 'Texas'), ('source', 'search')] 2635
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+210 [('day', 'Friday'), ('location', 'California'), ('source', 'search')] 2635
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+211 [('day', 'Sunday'), ('location', 'NY'), ('source', 'search')] 2629
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+212 [('day', 'Wed'), ('location', 'Texas'), ('source', 'search')] 2615
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+213 [('day', 'Sunday'), ('location', 'NJ'), ('source', 'search')] 2613
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+214 [('day', 'Thursday'), ('location', 'Florida'), ('source', 'search')] 2612
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+215 [('day', 'Monday'), ('location', 'California'), ('source', 'search')] 2609
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+216 [('day', 'Monday'), ('location', 'Texas'), ('source', 'search')] 2603
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+217 [('day', 'Tuesday'), ('location', 'NY'), ('source', 'search')] 2601
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+218 [('day', 'Tuesday'), ('location', 'Florida'), ('source', 'search')] 2572
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+219 [('day', 'Monday'), ('location', 'NJ'), ('source', 'search')] 2567
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+220 [('day', 'Monday'), ('location', 'NY'), ('source', 'search')] 2564
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+221 [('day', 'Tuesday'), ('location', 'NJ'), ('source', 'search')] 2554
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+222 [('day', 'Wed'), ('location', 'Florida'), ('source', 'search')] 2552
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+223 [('day', 'Friday'), ('location', 'Florida'), ('source', 'search')] 2517
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['man', 'woman']
+224 [('source', 'direct'), ('location', 'NJ')] 2119
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+225 [('source', 'direct'), ('location', 'Florida')] 2076
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+226 [('source', 'direct'), ('location', 'California')] 2051
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+227 [('source', 'direct'), ('location', 'Texas')] 2039
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+228 [('source', 'direct'), ('location', 'NY')] 2004
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+229 [('month', '1'), ('location', 'Texas')] 1814
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+230 [('month', '5'), ('location', 'NJ')] 1781
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+231 [('month', '2'), ('location', 'California')] 1778
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+232 [('month', '9'), ('location', 'Texas')] 1773
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+233 [('month', '7'), ('location', 'NY')] 1773
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+234 [('month', '9'), ('location', 'California')] 1769
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+235 [('month', '6'), ('location', 'NJ')] 1766
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+236 [('month', '11'), ('location', 'California')] 1758
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+237 [('month', '6'), ('location', 'Florida')] 1758
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+238 [('month', '2'), ('location', 'NY')] 1757
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+239 [('month', '4'), ('location', 'NY')] 1752
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+240 [('month', '2'), ('location', 'Texas')] 1750
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+241 [('month', '7'), ('location', 'California')] 1745
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+242 [('month', '10'), ('location', 'NJ')] 1745
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+243 [('month', '3'), ('location', 'Florida')] 1744
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+244 [('month', '12'), ('location', 'California')] 1742
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+245 [('month', '5'), ('location', 'California')] 1741
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+246 [('month', '4'), ('location', 'Florida')] 1740
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+247 [('month', '9'), ('location', 'Florida')] 1740
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+248 [('month', '5'), ('location', 'Texas')] 1737
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+249 [('month', '6'), ('location', 'Texas')] 1733
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+250 [('month', '10'), ('location', 'Texas')] 1732
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+251 [('month', '2'), ('location', 'NJ')] 1731
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+252 [('month', '7'), ('location', 'Texas')] 1730
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+253 [('month', '3'), ('location', 'California')] 1726
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+254 [('month', '11'), ('location', 'Texas')] 1725
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+255 [('month', '12'), ('location', 'NY')] 1724
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+256 [('month', '11'), ('location', 'NY')] 1723
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+257 [('month', '6'), ('location', 'California')] 1722
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+258 [('month', '8'), ('location', 'NY')] 1720
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+259 [('month', '5'), ('location', 'NY')] 1719
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+260 [('month', '8'), ('location', 'Texas')] 1716
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+261 [('month', '4'), ('location', 'NJ')] 1716
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+262 [('month', '3'), ('location', 'NJ')] 1712
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+263 [('month', '1'), ('location', 'NJ')] 1712
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+264 [('month', '8'), ('location', 'Florida')] 1709
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+265 [('month', '12'), ('location', 'NJ')] 1707
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+266 [('month', '3'), ('location', 'NY')] 1706
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+267 [('month', '1'), ('location', 'Florida')] 1706
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+268 [('month', '4'), ('location', 'California')] 1705
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+269 [('month', '10'), ('location', 'California')] 1704
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+270 [('month', '10'), ('location', 'Florida')] 1703
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+271 [('month', '1'), ('location', 'NY')] 1696
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+272 [('month', '8'), ('location', 'NJ')] 1693
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+273 [('month', '7'), ('location', 'NJ')] 1693
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+274 [('month', '6'), ('location', 'NY')] 1692
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+275 [('month', '5'), ('location', 'Florida')] 1692
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+276 [('month', '12'), ('location', 'Texas')] 1689
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+277 [('month', '9'), ('location', 'NJ')] 1688
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+278 [('month', '4'), ('location', 'Texas')] 1683
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+279 [('month', '3'), ('location', 'Texas')] 1682
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+280 [('month', '2'), ('location', 'Florida')] 1678
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+281 [('month', '10'), ('location', 'NY')] 1676
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+282 [('month', '11'), ('location', 'Florida')] 1671
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+283 [('month', '1'), ('location', 'California')] 1646
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+284 [('month', '8'), ('location', 'California')] 1644
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+285 [('month', '7'), ('location', 'Florida')] 1638
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+286 [('month', '12'), ('location', 'Florida')] 1634
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+287 [('month', '1'), ('location', 'Texas'), ('source', 'search')] 1620
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+288 [('month', '9'), ('location', 'NY')] 1620
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+289 [('month', '11'), ('location', 'NJ')] 1615
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+290 [('day', 'Saturday'), ('location', 'NY'), ('gender', 'man')] 1608
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+291 [('month', '2'), ('location', 'NY'), ('source', 'search')] 1605
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+292 [('month', '5'), ('location', 'NJ'), ('source', 'search')] 1601
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+293 [('month', '2'), ('location', 'California'), ('source', 'search')] 1598
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+294 [('month', '7'), ('location', 'NY'), ('source', 'search')] 1595
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+295 [('month', '6'), ('location', 'NJ'), ('source', 'search')] 1594
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+296 [('month', '9'), ('location', 'California'), ('source', 'search')] 1594
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+297 [('month', '4'), ('location', 'NY'), ('source', 'search')] 1583
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+298 [('month', '5'), ('location', 'California'), ('source', 'search')] 1580
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+299 [('month', '10'), ('location', 'NJ'), ('source', 'search')] 1579
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+300 [('month', '12'), ('location', 'NY'), ('source', 'search')] 1578
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+301 [('month', '7'), ('location', 'California'), ('source', 'search')] 1578
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+302 [('month', '6'), ('location', 'Florida'), ('source', 'search')] 1577
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+303 [('month', '3'), ('location', 'Florida'), ('source', 'search')] 1575
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+304 [('month', '11'), ('location', 'California'), ('source', 'search')] 1574
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+305 [('month', '9'), ('location', 'Texas'), ('source', 'search')] 1573
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+306 [('month', '10'), ('location', 'Texas'), ('source', 'search')] 1571
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+307 [('month', '9'), ('location', 'Florida'), ('source', 'search')] 1570
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+308 [('month', '6'), ('location', 'California'), ('source', 'search')] 1570
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+309 [('month', '2'), ('location', 'Texas'), ('source', 'search')] 1566
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+310 [('month', '8'), ('location', 'NY'), ('source', 'search')] 1565
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+311 [('month', '8'), ('location', 'Texas'), ('source', 'search')] 1565
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+312 [('month', '5'), ('location', 'Texas'), ('source', 'search')] 1564
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+313 [('month', '11'), ('location', 'NY'), ('source', 'search')] 1562
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+314 [('month', '11'), ('location', 'Texas'), ('source', 'search')] 1562
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+315 [('month', '7'), ('location', 'Texas'), ('source', 'search')] 1562
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+316 [('month', '5'), ('location', 'NY'), ('source', 'search')] 1561
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+317 [('day', 'Saturday'), ('location', 'Texas'), ('gender', 'man')] 1561
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+318 [('month', '6'), ('location', 'Texas'), ('source', 'search')] 1560
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+319 [('day', 'Wed'), ('location', 'California'), ('gender', 'woman')] 1558
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+320 [('month', '2'), ('location', 'NJ'), ('source', 'search')] 1557
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+321 [('month', '12'), ('location', 'California'), ('source', 'search')] 1552
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+322 [('month', '12'), ('location', 'NJ'), ('source', 'search')] 1549
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+323 [('day', 'Friday'), ('location', 'Texas'), ('gender', 'woman')] 1548
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+324 [('month', '1'), ('location', 'NJ'), ('source', 'search')] 1547
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+325 [('month', '4'), ('location', 'Florida'), ('source', 'search')] 1542
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+326 [('month', '3'), ('location', 'NJ'), ('source', 'search')] 1542
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+327 [('month', '12'), ('location', 'Texas'), ('source', 'search')] 1541
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+328 [('month', '3'), ('location', 'California'), ('source', 'search')] 1540
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+329 [('month', '10'), ('location', 'Florida'), ('source', 'search')] 1539
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+330 [('day', 'Sunday'), ('location', 'Florida'), ('gender', 'woman')] 1538
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+331 [('month', '4'), ('location', 'California'), ('source', 'search')] 1535
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+332 [('month', '8'), ('location', 'Florida'), ('source', 'search')] 1535
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+333 [('month', '3'), ('location', 'Texas'), ('source', 'search')] 1532
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+334 [('day', 'Thursday'), ('location', 'California'), ('gender', 'woman')] 1532
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+335 [('day', 'Friday'), ('location', 'Texas'), ('gender', 'man')] 1532
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+336 [('month', '1'), ('location', 'Florida'), ('source', 'search')] 1530
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+337 [('month', '10'), ('location', 'California'), ('source', 'search')] 1526
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+338 [('day', 'Monday'), ('location', 'Florida'), ('gender', 'woman')] 1525
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+339 [('month', '4'), ('location', 'NJ'), ('source', 'search')] 1523
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+340 [('month', '8'), ('location', 'NJ'), ('source', 'search')] 1520
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+341 [('day', 'Friday'), ('location', 'NJ'), ('gender', 'man')] 1518
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+342 [('month', '10'), ('location', 'NY'), ('source', 'search')] 1517
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+343 [('month', '1'), ('location', 'NY'), ('source', 'search')] 1516
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+344 [('day', 'Saturday'), ('location', 'NJ'), ('gender', 'man')] 1516
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+345 [('month', '3'), ('location', 'NY'), ('source', 'search')] 1515
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+346 [('day', 'Wed'), ('location', 'NJ'), ('gender', 'woman')] 1515
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+347 [('month', '7'), ('location', 'NJ'), ('source', 'search')] 1511
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+348 [('month', '9'), ('location', 'NJ'), ('source', 'search')] 1511
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+349 [('month', '2'), ('location', 'Florida'), ('source', 'search')] 1510
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+350 [('month', '4'), ('location', 'Texas'), ('source', 'search')] 1509
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+351 [('day', 'Thursday'), ('location', 'Texas'), ('gender', 'woman')] 1509
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+352 [('month', '1'), ('location', 'California'), ('source', 'search')] 1506
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+353 [('month', '5'), ('location', 'Florida'), ('source', 'search')] 1505
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+354 [('month', '6'), ('location', 'NY'), ('source', 'search')] 1500
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+355 [('day', 'Tuesday'), ('location', 'Texas'), ('gender', 'woman')] 1500
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+356 [('day', 'Thursday'), ('location', 'NJ'), ('gender', 'man')] 1498
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+357 [('source', 'direct'), ('day', 'Thursday')] 1497
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+358 [('day', 'Sunday'), ('location', 'NY'), ('gender', 'woman')] 1496
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+359 [('day', 'Sunday'), ('location', 'Texas'), ('gender', 'man')] 1496
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+360 [('day', 'Tuesday'), ('location', 'Texas'), ('gender', 'man')] 1495
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+361 [('month', '7'), ('location', 'Florida'), ('source', 'search')] 1493
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+362 [('month', '11'), ('location', 'Florida'), ('source', 'search')] 1493
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+363 [('day', 'Tuesday'), ('location', 'California'), ('gender', 'woman')] 1491
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+364 [('day', 'Saturday'), ('location', 'Texas'), ('gender', 'woman')] 1489
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+365 [('day', 'Friday'), ('location', 'NY'), ('gender', 'woman')] 1487
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+366 [('day', 'Saturday'), ('location', 'Florida'), ('gender', 'man')] 1486
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+367 [('day', 'Monday'), ('location', 'Florida'), ('gender', 'man')] 1485
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+368 [('day', 'Thursday'), ('location', 'NY'), ('gender', 'woman')] 1484
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+369 [('day', 'Friday'), ('location', 'NJ'), ('gender', 'woman')] 1481
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+370 [('source', 'direct'), ('day', 'Monday')] 1481
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+371 [('day', 'Tuesday'), ('location', 'California'), ('gender', 'man')] 1479
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+372 [('day', 'Thursday'), ('location', 'NJ'), ('gender', 'woman')] 1478
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+373 [('day', 'Friday'), ('location', 'California'), ('gender', 'man')] 1478
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+374 [('day', 'Saturday'), ('location', 'Florida'), ('gender', 'woman')] 1477
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+375 [('month', '8'), ('location', 'California'), ('source', 'search')] 1476
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+376 [('day', 'Thursday'), ('location', 'NY'), ('gender', 'man')] 1476
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+377 [('source', 'direct'), ('day', 'Tuesday')] 1476
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+378 [('day', 'Sunday'), ('location', 'Florida'), ('gender', 'man')] 1475
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+379 [('day', 'Saturday'), ('location', 'California'), ('gender', 'woman')] 1473
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+380 [('day', 'Wed'), ('location', 'California'), ('gender', 'man')] 1473
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+381 [('day', 'Wed'), ('location', 'NY'), ('gender', 'man')] 1472
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+382 [('day', 'Thursday'), ('location', 'Florida'), ('gender', 'woman')] 1471
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+383 [('day', 'Sunday'), ('location', 'NJ'), ('gender', 'man')] 1471
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+384 [('day', 'Sunday'), ('location', 'California'), ('gender', 'man')] 1471
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+385 [('day', 'Monday'), ('location', 'California'), ('gender', 'man')] 1469
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+386 [('month', '12'), ('location', 'Florida'), ('source', 'search')] 1468
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+387 [('day', 'Saturday'), ('location', 'NJ'), ('gender', 'woman')] 1468
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+388 [('day', 'Thursday'), ('location', 'California'), ('gender', 'man')] 1466
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+389 [('day', 'Monday'), ('location', 'Texas'), ('gender', 'woman')] 1465
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+390 [('source', 'direct'), ('day', 'Wed')] 1465
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+391 [('day', 'Sunday'), ('location', 'California'), ('gender', 'woman')] 1463
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+392 [('day', 'Friday'), ('location', 'NY'), ('gender', 'man')] 1463
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+393 [('source', 'direct'), ('day', 'Friday')] 1462
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+394 [('day', 'Wed'), ('location', 'NY'), ('gender', 'woman')] 1460
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+395 [('day', 'Monday'), ('location', 'NY'), ('gender', 'man')] 1459
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+396 [('day', 'Wed'), ('location', 'NJ'), ('gender', 'man')] 1459
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+397 [('month', '9'), ('location', 'NY'), ('source', 'search')] 1457
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+398 [('day', 'Tuesday'), ('location', 'NJ'), ('gender', 'man')] 1456
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+399 [('day', 'Friday'), ('location', 'California'), ('gender', 'woman')] 1455
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+400 [('source', 'direct'), ('day', 'Saturday')] 1455
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+401 [('day', 'Tuesday'), ('location', 'Florida'), ('gender', 'woman')] 1454
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+402 [('source', 'direct'), ('day', 'Sunday')] 1453
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+403 [('day', 'Monday'), ('location', 'California'), ('gender', 'woman')] 1451
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+404 [('day', 'Wed'), ('location', 'Texas'), ('gender', 'man')] 1451
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+405 [('day', 'Wed'), ('location', 'Texas'), ('gender', 'woman')] 1448
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+406 [('day', 'Saturday'), ('location', 'NY'), ('gender', 'woman')] 1445
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+407 [('day', 'Tuesday'), ('location', 'NY'), ('gender', 'woman')] 1443
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+408 [('day', 'Monday'), ('location', 'NJ'), ('gender', 'woman')] 1442
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+409 [('day', 'Saturday'), ('location', 'NY'), ('gender', 'man'), ('source', 'search')] 1439
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+410 [('day', 'Tuesday'), ('location', 'NY'), ('gender', 'man')] 1437
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+411 [('day', 'Monday'), ('location', 'Texas'), ('gender', 'man')] 1434
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+412 [('day', 'Tuesday'), ('location', 'Florida'), ('gender', 'man')] 1430
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+413 [('day', 'Thursday'), ('location', 'Florida'), ('gender', 'man')] 1430
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+414 [('day', 'Wed'), ('location', 'Florida'), ('gender', 'woman')] 1429
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+415 [('day', 'Sunday'), ('location', 'NJ'), ('gender', 'woman')] 1425
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+416 [('day', 'Sunday'), ('location', 'NY'), ('gender', 'man')] 1425
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+417 [('day', 'Sunday'), ('location', 'Texas'), ('gender', 'woman')] 1423
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+418 [('day', 'Saturday'), ('location', 'California'), ('gender', 'man')] 1421
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+419 [('day', 'Monday'), ('location', 'NJ'), ('gender', 'man')] 1419
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+420 [('day', 'Tuesday'), ('location', 'NJ'), ('gender', 'woman')] 1413
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+421 [('day', 'Thursday'), ('location', 'Texas'), ('gender', 'man')] 1413
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+422 [('day', 'Wed'), ('location', 'Florida'), ('gender', 'man')] 1412
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+423 [('month', '11'), ('location', 'NJ'), ('source', 'search')] 1406
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+Cats:  ['man', 'woman']
+424 [('day', 'Friday'), ('location', 'Florida'), ('gender', 'man')] 1406
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+425 [('day', 'Monday'), ('location', 'NY'), ('gender', 'woman')] 1403
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+426 [('day', 'Wed'), ('location', 'California'), ('gender', 'woman'), ('source', 'search')] 1402
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+427 [('day', 'Saturday'), ('location', 'Texas'), ('gender', 'man'), ('source', 'search')] 1398
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+428 [('day', 'Friday'), ('location', 'Florida'), ('gender', 'woman')] 1395
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+429 [('day', 'Friday'), ('location', 'Texas'), ('gender', 'woman'), ('source', 'search')] 1386
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+430 [('day', 'Friday'), ('location', 'Texas'), ('gender', 'man'), ('source', 'search')] 1386
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+431 [('day', 'Monday'), ('location', 'Florida'), ('gender', 'woman'), ('source', 'search')] 1379
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+432 [('day', 'Sunday'), ('location', 'Florida'), ('gender', 'woman'), ('source', 'search')] 1373
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+433 [('day', 'Thursday'), ('location', 'California'), ('gender', 'woman'), ('source', 'search')] 1372
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+434 [('day', 'Friday'), ('location', 'NJ'), ('gender', 'man'), ('source', 'search')] 1370
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+435 [('day', 'Saturday'), ('location', 'Texas'), ('gender', 'woman'), ('source', 'search')] 1359
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+436 [('day', 'Tuesday'), ('location', 'Texas'), ('gender', 'man'), ('source', 'search')] 1357
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+437 [('day', 'Sunday'), ('location', 'Texas'), ('gender', 'man'), ('source', 'search')] 1357
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+438 [('day', 'Wed'), ('location', 'NJ'), ('gender', 'woman'), ('source', 'search')] 1355
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+439 [('day', 'Thursday'), ('location', 'Texas'), ('gender', 'woman'), ('source', 'search')] 1354
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+440 [('day', 'Tuesday'), ('location', 'California'), ('gender', 'woman'), ('source', 'search')] 1353
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+441 [('day', 'Saturday'), ('location', 'NJ'), ('gender', 'man'), ('source', 'search')] 1352
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+442 [('day', 'Friday'), ('location', 'NY'), ('gender', 'woman'), ('source', 'search')] 1352
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+443 [('day', 'Saturday'), ('location', 'California'), ('gender', 'woman'), ('source', 'search')] 1351
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+444 [('day', 'Saturday'), ('location', 'Florida'), ('gender', 'man'), ('source', 'search')] 1349
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+445 [('day', 'Monday'), ('location', 'Florida'), ('gender', 'man'), ('source', 'search')] 1349
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+446 [('day', 'Thursday'), ('location', 'NY'), ('gender', 'woman'), ('source', 'search')] 1345
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+447 [('day', 'Tuesday'), ('location', 'Texas'), ('gender', 'woman'), ('source', 'search')] 1343
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+448 [('day', 'Thursday'), ('location', 'NJ'), ('gender', 'woman'), ('source', 'search')] 1342
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+449 [('day', 'Tuesday'), ('location', 'California'), ('gender', 'man'), ('source', 'search')] 1342
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+450 [('day', 'Sunday'), ('location', 'California'), ('gender', 'man'), ('source', 'search')] 1342
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+451 [('day', 'Thursday'), ('location', 'NJ'), ('gender', 'man'), ('source', 'search')] 1341
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+452 [('day', 'Wed'), ('location', 'NY'), ('gender', 'woman'), ('source', 'search')] 1341
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+453 [('day', 'Sunday'), ('location', 'NY'), ('gender', 'woman'), ('source', 'search')] 1340
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+454 [('day', 'Sunday'), ('location', 'NJ'), ('gender', 'man'), ('source', 'search')] 1340
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+455 [('day', 'Friday'), ('location', 'NJ'), ('gender', 'woman'), ('source', 'search')] 1330
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+456 [('day', 'Friday'), ('location', 'California'), ('gender', 'man'), ('source', 'search')] 1329
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+457 [('day', 'Wed'), ('location', 'California'), ('gender', 'man'), ('source', 'search')] 1325
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+458 [('day', 'Friday'), ('location', 'NY'), ('gender', 'man'), ('source', 'search')] 1325
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+459 [('day', 'Saturday'), ('location', 'NY'), ('gender', 'woman'), ('source', 'search')] 1324
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+460 [('month', '2'), ('day', 'Saturday')] 1323
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+461 [('day', 'Wed'), ('location', 'Texas'), ('gender', 'woman'), ('source', 'search')] 1319
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+462 [('day', 'Monday'), ('location', 'Texas'), ('gender', 'woman'), ('source', 'search')] 1319
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+463 [('day', 'Saturday'), ('location', 'Florida'), ('gender', 'woman'), ('source', 'search')] 1318
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+464 [('day', 'Thursday'), ('location', 'NY'), ('gender', 'man'), ('source', 'search')] 1317
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+465 [('day', 'Wed'), ('location', 'NY'), ('gender', 'man'), ('source', 'search')] 1317
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+466 [('day', 'Sunday'), ('location', 'Florida'), ('gender', 'man'), ('source', 'search')] 1316
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+467 [('day', 'Sunday'), ('location', 'California'), ('gender', 'woman'), ('source', 'search')] 1314
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+468 [('day', 'Monday'), ('location', 'California'), ('gender', 'man'), ('source', 'search')] 1311
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+469 [('day', 'Saturday'), ('location', 'NJ'), ('gender', 'woman'), ('source', 'search')] 1311
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+470 [('day', 'Thursday'), ('location', 'Florida'), ('gender', 'woman'), ('source', 'search')] 1307
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+471 [('day', 'Monday'), ('location', 'NY'), ('gender', 'man'), ('source', 'search')] 1306
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+472 [('day', 'Friday'), ('location', 'California'), ('gender', 'woman'), ('source', 'search')] 1306
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+473 [('day', 'Tuesday'), ('location', 'NY'), ('gender', 'woman'), ('source', 'search')] 1306
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+474 [('day', 'Wed'), ('location', 'NJ'), ('gender', 'man'), ('source', 'search')] 1305
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+475 [('day', 'Thursday'), ('location', 'Florida'), ('gender', 'man'), ('source', 'search')] 1305
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+476 [('day', 'Tuesday'), ('location', 'NJ'), ('gender', 'man'), ('source', 'search')] 1298
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+477 [('day', 'Monday'), ('location', 'California'), ('gender', 'woman'), ('source', 'search')] 1298
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+478 [('day', 'Thursday'), ('location', 'California'), ('gender', 'man'), ('source', 'search')] 1296
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+479 [('day', 'Wed'), ('location', 'Texas'), ('gender', 'man'), ('source', 'search')] 1296
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+480 [('day', 'Tuesday'), ('location', 'NY'), ('gender', 'man'), ('source', 'search')] 1295
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+481 [('month', '6'), ('day', 'Saturday')] 1295
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+482 [('month', '10'), ('day', 'Friday')] 1293
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+483 [('day', 'Sunday'), ('location', 'NY'), ('gender', 'man'), ('source', 'search')] 1289
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+484 [('day', 'Tuesday'), ('location', 'Florida'), ('gender', 'woman'), ('source', 'search')] 1288
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+485 [('day', 'Saturday'), ('location', 'California'), ('gender', 'man'), ('source', 'search')] 1288
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+486 [('month', '9'), ('day', 'Thursday')] 1288
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+487 [('day', 'Sunday'), ('location', 'Texas'), ('gender', 'woman'), ('source', 'search')] 1286
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+488 [('day', 'Monday'), ('location', 'NJ'), ('gender', 'woman'), ('source', 'search')] 1285
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+489 [('month', '4'), ('day', 'Monday')] 1285
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+490 [('day', 'Monday'), ('location', 'Texas'), ('gender', 'man'), ('source', 'search')] 1284
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+491 [('day', 'Tuesday'), ('location', 'Florida'), ('gender', 'man'), ('source', 'search')] 1284
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+492 [('month', '1'), ('day', 'Saturday')] 1283
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+493 [('day', 'Monday'), ('location', 'NJ'), ('gender', 'man'), ('source', 'search')] 1282
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+494 [('day', 'Thursday'), ('location', 'Texas'), ('gender', 'man'), ('source', 'search')] 1281
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+495 [('day', 'Wed'), ('location', 'Florida'), ('gender', 'woman'), ('source', 'search')] 1277
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+496 [('day', 'Wed'), ('location', 'Florida'), ('gender', 'man'), ('source', 'search')] 1275
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+497 [('month', '4'), ('day', 'Thursday')] 1274
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+498 [('day', 'Sunday'), ('location', 'NJ'), ('gender', 'woman'), ('source', 'search')] 1273
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+499 [('month', '7'), ('day', 'Sunday')] 1273
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+500 [('month', '5'), ('day', 'Wed')] 1272
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+501 [('month', '5'), ('day', 'Tuesday')] 1267
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+502 [('month', '3'), ('day', 'Friday')] 1266
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+503 [('month', '7'), ('day', 'Thursday')] 1264
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+504 [('month', '5'), ('day', 'Sunday')] 1262
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+505 [('day', 'Friday'), ('location', 'Florida'), ('gender', 'woman'), ('source', 'search')] 1260
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+506 [('month', '1'), ('day', 'Friday')] 1259
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+507 [('day', 'Monday'), ('location', 'NY'), ('gender', 'woman'), ('source', 'search')] 1258
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+508 [('day', 'Friday'), ('location', 'Florida'), ('gender', 'man'), ('source', 'search')] 1257
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+509 [('month', '3'), ('day', 'Tuesday')] 1257
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+510 [('day', 'Tuesday'), ('location', 'NJ'), ('gender', 'woman'), ('source', 'search')] 1256
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+511 [('month', '2'), ('day', 'Wed')] 1256
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+512 [('month', '6'), ('day', 'Friday')] 1255
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+513 [('month', '6'), ('day', 'Tuesday')] 1255
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+514 [('month', '5'), ('day', 'Saturday')] 1254
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+515 [('month', '11'), ('day', 'Friday')] 1249
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+516 [('month', '2'), ('day', 'Sunday')] 1249
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+517 [('month', '9'), ('day', 'Friday')] 1248
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+518 [('month', '10'), ('day', 'Saturday')] 1247
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+519 [('month', '1'), ('day', 'Sunday')] 1247
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+520 [('month', '12'), ('day', 'Monday')] 1247
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+521 [('month', '12'), ('day', 'Thursday')] 1246
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+522 [('month', '4'), ('day', 'Saturday')] 1245
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+523 [('month', '11'), ('day', 'Sunday')] 1245
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+524 [('month', '7'), ('day', 'Wed')] 1243
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+525 [('month', '2'), ('day', 'Tuesday')] 1242
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+526 [('month', '6'), ('day', 'Thursday')] 1241
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+527 [('month', '8'), ('day', 'Sunday')] 1239
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+528 [('month', '8'), ('day', 'Thursday')] 1237
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+529 [('month', '11'), ('day', 'Monday')] 1236
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+530 [('month', '5'), ('day', 'Friday')] 1234
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+531 [('month', '8'), ('day', 'Saturday')] 1233
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+532 [('month', '12'), ('day', 'Tuesday')] 1233
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+533 [('month', '10'), ('day', 'Wed')] 1232
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+534 [('month', '7'), ('day', 'Saturday')] 1231
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+535 [('month', '4'), ('day', 'Wed')] 1231
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+536 [('month', '4'), ('day', 'Friday')] 1225
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+537 [('month', '1'), ('day', 'Tuesday')] 1223
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+538 [('month', '2'), ('day', 'Thursday')] 1222
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+539 [('month', '9'), ('day', 'Sunday')] 1221
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+540 [('month', '9'), ('day', 'Saturday')] 1219
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+541 [('month', '8'), ('day', 'Wed')] 1219
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+542 [('month', '3'), ('day', 'Wed')] 1218
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+543 [('month', '6'), ('day', 'Sunday')] 1217
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+544 [('month', '3'), ('day', 'Monday')] 1216
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+545 [('month', '10'), ('day', 'Thursday')] 1213
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+546 [('month', '6'), ('day', 'Wed')] 1213
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+547 [('month', '2'), ('day', 'Friday')] 1212
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+548 [('month', '9'), ('day', 'Monday')] 1212
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+549 [('month', '10'), ('day', 'Tuesday')] 1211
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+550 [('month', '8'), ('day', 'Monday')] 1208
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+551 [('month', '12'), ('day', 'Saturday')] 1207
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+552 [('month', '11'), ('day', 'Saturday')] 1207
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+553 [('month', '3'), ('day', 'Thursday')] 1207
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+554 [('month', '3'), ('day', 'Sunday')] 1206
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+555 [('month', '9'), ('day', 'Wed')] 1204
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+556 [('month', '7'), ('day', 'Monday')] 1204
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+557 [('month', '5'), ('day', 'Thursday')] 1202
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+558 [('month', '12'), ('day', 'Wed')] 1202
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+559 [('month', '3'), ('day', 'Saturday')] 1200
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+560 [('month', '10'), ('day', 'Monday')] 1200
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+561 [('month', '9'), ('day', 'Tuesday')] 1198
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+562 [('month', '1'), ('day', 'Wed')] 1197
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+563 [('month', '6'), ('day', 'Monday')] 1195
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+564 [('month', '12'), ('day', 'Sunday')] 1191
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+565 [('month', '11'), ('day', 'Wed')] 1190
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+566 [('month', '2'), ('day', 'Monday')] 1190
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+567 [('month', '11'), ('day', 'Tuesday')] 1187
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+568 [('month', '1'), ('day', 'Thursday')] 1185
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+569 [('month', '7'), ('day', 'Friday')] 1184
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+570 [('month', '2'), ('day', 'Saturday'), ('source', 'search')] 1181
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+571 [('month', '10'), ('day', 'Friday'), ('source', 'search')] 1180
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+572 [('month', '7'), ('day', 'Tuesday')] 1180
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+573 [('month', '1'), ('day', 'Monday')] 1180
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+574 [('month', '5'), ('day', 'Monday')] 1179
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+575 [('month', '11'), ('day', 'Thursday')] 1178
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+576 [('month', '8'), ('day', 'Tuesday')] 1178
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+577 [('month', '1'), ('day', 'Saturday'), ('source', 'search')] 1170
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+578 [('month', '12'), ('day', 'Friday')] 1170
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+579 [('month', '7'), ('day', 'Sunday'), ('source', 'search')] 1169
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+580 [('month', '4'), ('day', 'Sunday')] 1169
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+581 [('month', '8'), ('day', 'Friday')] 1168
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+582 [('month', '4'), ('day', 'Tuesday')] 1167
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+583 [('month', '10'), ('day', 'Sunday')] 1164
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['direct', 'search']
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+584 [('month', '6'), ('day', 'Saturday'), ('source', 'search')] 1163
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+585 [('month', '5'), ('day', 'Wed'), ('source', 'search')] 1160
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+586 [('month', '4'), ('day', 'Monday'), ('source', 'search')] 1152
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+587 [('month', '9'), ('day', 'Thursday'), ('source', 'search')] 1144
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+588 [('month', '6'), ('day', 'Friday'), ('source', 'search')] 1139
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+589 [('month', '5'), ('day', 'Tuesday'), ('source', 'search')] 1139
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+590 [('month', '12'), ('day', 'Thursday'), ('source', 'search')] 1137
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+591 [('month', '5'), ('day', 'Sunday'), ('source', 'search')] 1136
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+592 [('month', '3'), ('day', 'Friday'), ('source', 'search')] 1134
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+593 [('month', '6'), ('day', 'Tuesday'), ('source', 'search')] 1133
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+594 [('month', '3'), ('day', 'Tuesday'), ('source', 'search')] 1132
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+595 [('month', '10'), ('day', 'Saturday'), ('source', 'search')] 1131
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+596 [('month', '5'), ('day', 'Saturday'), ('source', 'search')] 1129
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+597 [('month', '12'), ('day', 'Monday'), ('source', 'search')] 1128
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+598 [('month', '1'), ('day', 'Sunday'), ('source', 'search')] 1127
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+599 [('month', '4'), ('day', 'Saturday'), ('source', 'search')] 1126
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+600 [('month', '2'), ('day', 'Wed'), ('source', 'search')] 1126
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+601 [('month', '7'), ('day', 'Wed'), ('source', 'search')] 1124
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+602 [('month', '4'), ('day', 'Thursday'), ('source', 'search')] 1122
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+603 [('month', '8'), ('day', 'Sunday'), ('source', 'search')] 1119
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+604 [('month', '9'), ('day', 'Friday'), ('source', 'search')] 1119
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+605 [('month', '2'), ('day', 'Tuesday'), ('source', 'search')] 1119
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+606 [('month', '8'), ('day', 'Saturday'), ('source', 'search')] 1118
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+607 [('month', '6'), ('day', 'Thursday'), ('source', 'search')] 1117
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+608 [('month', '7'), ('day', 'Thursday'), ('source', 'search')] 1117
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+609 [('month', '1'), ('day', 'Friday'), ('source', 'search')] 1116
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+610 [('month', '5'), ('day', 'Friday'), ('source', 'search')] 1114
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+611 [('month', '10'), ('day', 'Wed'), ('source', 'search')] 1113
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+612 [('month', '11'), ('day', 'Friday'), ('source', 'search')] 1113
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+613 [('month', '2'), ('day', 'Sunday'), ('source', 'search')] 1112
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+614 [('month', '8'), ('day', 'Thursday'), ('source', 'search')] 1110
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+615 [('month', '9'), ('day', 'Sunday'), ('source', 'search')] 1109
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+616 [('month', '12'), ('day', 'Tuesday'), ('source', 'search')] 1108
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+617 [('month', '11'), ('day', 'Sunday'), ('source', 'search')] 1107
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+618 [('month', '4'), ('day', 'Friday'), ('source', 'search')] 1106
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+619 [('month', '11'), ('day', 'Monday'), ('source', 'search')] 1105
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+620 [('month', '2'), ('day', 'Thursday'), ('source', 'search')] 1103
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+621 [('month', '9'), ('day', 'Saturday'), ('source', 'search')] 1101
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+622 [('month', '6'), ('day', 'Wed'), ('source', 'search')] 1101
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+623 [('month', '2'), ('day', 'Friday'), ('source', 'search')] 1101
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+624 [('month', '7'), ('day', 'Saturday'), ('source', 'search')] 1100
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+625 [('month', '8'), ('day', 'Wed'), ('source', 'search')] 1100
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+626 [('month', '8'), ('day', 'Monday'), ('source', 'search')] 1098
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+627 [('month', '10'), ('day', 'Thursday'), ('source', 'search')] 1098
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+628 [('month', '4'), ('day', 'Wed'), ('source', 'search')] 1097
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+629 [('month', '3'), ('day', 'Wed'), ('source', 'search')] 1095
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+630 [('month', '2'), ('day', 'Monday'), ('source', 'search')] 1094
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+631 [('month', '12'), ('day', 'Saturday'), ('source', 'search')] 1094
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+632 [('month', '3'), ('day', 'Saturday'), ('source', 'search')] 1093
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+633 [('month', '9'), ('day', 'Monday'), ('source', 'search')] 1093
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+634 [('month', '1'), ('day', 'Tuesday'), ('source', 'search')] 1089
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+635 [('month', '12'), ('day', 'Wed'), ('source', 'search')] 1088
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+636 [('month', '3'), ('day', 'Sunday'), ('source', 'search')] 1088
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+637 [('month', '3'), ('day', 'Thursday'), ('source', 'search')] 1087
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+638 [('source', 'direct'), ('location', 'Florida'), ('gender', 'woman')] 1087
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+639 [('month', '6'), ('day', 'Sunday'), ('source', 'search')] 1086
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+640 [('month', '10'), ('day', 'Tuesday'), ('source', 'search')] 1086
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+641 [('month', '12'), ('day', 'Sunday'), ('source', 'search')] 1084
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+642 [('month', '11'), ('day', 'Saturday'), ('source', 'search')] 1083
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+643 [('month', '5'), ('day', 'Thursday'), ('source', 'search')] 1083
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+644 [('month', '7'), ('day', 'Monday'), ('source', 'search')] 1079
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+645 [('month', '1'), ('day', 'Thursday'), ('source', 'search')] 1078
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+646 [('month', '3'), ('day', 'Monday'), ('source', 'search')] 1075
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+647 [('month', '7'), ('day', 'Friday'), ('source', 'search')] 1075
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+648 [('month', '7'), ('day', 'Tuesday'), ('source', 'search')] 1075
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+649 [('month', '1'), ('day', 'Wed'), ('source', 'search')] 1072
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+650 [('month', '9'), ('day', 'Tuesday'), ('source', 'search')] 1072
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+651 [('source', 'direct'), ('location', 'NJ'), ('gender', 'woman')] 1070
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+652 [('month', '11'), ('day', 'Wed'), ('source', 'search')] 1069
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+653 [('month', '10'), ('day', 'Monday'), ('source', 'search')] 1068
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+654 [('month', '9'), ('day', 'Wed'), ('source', 'search')] 1067
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+655 [('month', '1'), ('day', 'Monday'), ('source', 'search')] 1067
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+656 [('month', '11'), ('day', 'Thursday'), ('source', 'search')] 1064
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+657 [('month', '6'), ('day', 'Monday'), ('source', 'search')] 1062
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+658 [('month', '8'), ('day', 'Tuesday'), ('source', 'search')] 1061
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+659 [('month', '10'), ('day', 'Sunday'), ('source', 'search')] 1056
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+660 [('month', '11'), ('day', 'Tuesday'), ('source', 'search')] 1056
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+661 [('month', '8'), ('day', 'Friday'), ('source', 'search')] 1055
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+662 [('month', '4'), ('day', 'Tuesday'), ('source', 'search')] 1052
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+663 [('source', 'direct'), ('location', 'NY'), ('gender', 'man')] 1052
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+664 [('month', '5'), ('day', 'Monday'), ('source', 'search')] 1050
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+665 [('month', '12'), ('day', 'Friday'), ('source', 'search')] 1049
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+666 [('source', 'direct'), ('location', 'NJ'), ('gender', 'man')] 1049
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['1', '10', '11', '12', '2', '3', '4', '5', '6', '7', '8', '9']
+Cats:  ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wed']
+667 [('month', '4'), ('day', 'Sunday'), ('source', 'search')] 1037
+Comp:  [[u'cabernet', u'riesling', u'merlot', u'chardonnay']]
+Cats:  ['California', 'Florida', 'NJ', 'NY', 'Texas']
+Cats:  ['man', 'woman']
+number of slices:  667
+218.97user 1.75system 3:42.72elapsed 99%CPU (0avgtext+0avgdata 129880maxresident)k
+0inputs+104464outputs (0major+49681minor)pagefaults 0swaps

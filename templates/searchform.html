@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PlotsExplore</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/master.css">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='master.css') }}"> -->
+</head>
+
+<body>
+    <div class="container page-container">
+
+        <!--<h3>Hello, Testing...</h3>-->
+        <div class="page-header">
+            <!-- <h2>Explore Plots within a Plottype</h2> -->
+            <h2> Explore the Plots </h2>
+        </div>
+        <form action="/form/search/" name="chartSearchForm">
+            <!--<div class="form-group">
+                <label for="dataset">Dataset</label>
+                <select class="form-control" name="dataset" id="">
+                    {% for x in datasetList %}
+                    <option value="{{x}}">{{x}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="chartType">Chart Type</label>
+                <select class="form-control" name="chartType" value="">
+                    <option value=""></option>
+                    <option value="bargraph">bargraph</option>
+                    <option value="histogram">histogram</option>
+                    <option value="heatmap">heatmap</option>
+                    <option value="scatter">scatter</option>
+                    <option value="boxplot">boxplot</option>
+                </select>
+            </div>-->
+            <div class = "form-group">
+                <label for="dataset">Dataset</label>
+                <input class="form-control" type="text" name="dataset" value={{db}} readonly="readonly">
+            </div>
+            <div class = "form-group">
+                <label for="plottype">Plot Type</label>
+                <input class="form-control" type="text" name="plottype" value={{pt}}>
+                <!-- <input class="form-control" type="text" name="plottype" value={{pt}} readonly="readonly"> -->
+            </div>
+            <div class="form-group">
+                <label for="minsup">Min Support</label>
+                <!--<input class="form-control" type="number" name="minsup" min="0" max="1" step="0.01" value="0.05">-->
+                <input class="form-control" type="number" name="minsup" min="0" max="1" step="0.01" value="0.00">
+            </div>
+            <div class="form-group">
+                <label for="minmark">Min Mark</label>
+                <!--<input class="form-control" type="number" name="minmark" min="0" max="1" step="0.01" value="0.30">-->
+                <input class="form-control" type="number" name="minmark" min="0" max="1" step="0.01" value="0.00">
+            </div>
+            <div class="form-group">
+                <label for="maxmark">Max Mark</label>
+                <!--<input class="form-control" type="number" name="minmark" min="0" max="1" step="0.01" value="0.30">-->
+                <input class="form-control" type="number" name="maxmark" min="0" max="1" step="0.01" value="1.00">
+            </div>
+            <!--<div class="form-group">
+                <label for="x">X</label>
+                <input class="form-control" type="text" name="x">
+            </div>
+            <div class="form-group">
+                <label for="y">Y</label>
+                <input class="form-control" type="text" name="y">
+            </div>-->
+            <div class="form-group">
+                <label for="itags">Slice</label>
+                <input class="form-control" type="text" name="slice">
+            </div>
+            <div class="form-group">
+                <label for="sortAttr">Sort By</label>
+                <select class="form-control" name="sortAttr" value=""> 
+                    <option value="mark">mark</option>
+                    <option value="support">support</option>
+                </select>
+            </div>
+
+            <input class="btn btn-primary" type="submit" value="Submit">
+            <input name="optradio" type="hidden" value={{op}}>
+        </form>
+    </div>
+</body>
+
+<!-- <a href="{{ url_for('searchPlottypes') }}?dataset={{ db }}&optradio={{ op }}">Back</a> -->
+<a href="/">
+    <b>Home</b>
+</a>
+
+</html>

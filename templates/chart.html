@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Plot</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/master.css">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='master.css') }}"> -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+      {% autoescape false %}
+        var myChart = Highcharts.chart('container', {{plot_data}})
+      {% endautoescape %}
+      });
+    </script>
+    <style>
+      html, body { height: 100%; width: 100%; margin: 0; }
+      body { display: flex; align-items: stretch }
+      .flexpage { width: 80%; height: 80%; display: flex; flex-direction: column; align-items: stretch }
+      .plot { flex-grow: 1 }
+    </style>
+</head>
+
+<body>
+    <div class="container page-container flexpage">
+
+        <!--<h3>Hello, Testing...</h3>-->
+        <div class="page-header">
+            <!-- <h2>Explore Plots within a Plottype</h2> -->
+            <h2>Plot</h2>
+        </div>
+	<div id="container" class="plot"></div>
+    </div>
+</body>
+</html>

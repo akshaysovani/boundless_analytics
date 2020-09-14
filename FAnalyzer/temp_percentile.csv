@@ -1,0 +1,85 @@
+"MEETINGS: ""Many""",,
+"MEETINGS: ""Few"""," DRINK: ""None""",
+"MEETINGS: ""None"""," DRINK: ""None""",
+"DRINK: ""None""",,
+"DRINK: ""Bourbon""",,
+"MEETINGS: ""Few"""," DRINK: ""Beer""",
+"MEETINGS: ""None""",,
+"MEETINGS: ""Few""",,
+"MEETINGS: ""Many"""," DRINK: ""None""",
+"MEETINGS: ""None"""," DRINK: ""Bourbon""",
+"DRINK: ""WhiteWine""",,
+"SYMPTOMS: ""Ear Pain"""," MEETINGS: ""None"""," DRINK: ""None"""
+"SYMPTOMS: ""Dizzy"""," MEETINGS: ""Many"""," DRINK: ""Whisky"""
+"SYMPTOMS: ""Dizzy"""," DRINK: ""RedWine""",
+"DRINK: ""Whisky""",,
+"MEETINGS: ""Few"""," DRINK: ""Whisky""",
+"DRINK: ""Beer""",,
+"SYMPTOMS: ""Dizzy"""," MEETINGS: ""Many"""," DRINK: ""WhiteWine"""
+"MEETINGS: ""Many"""," DRINK: ""Bourbon""",
+"SYMPTOMS: ""Dizzy"""," MEETINGS: ""Few"""," DRINK: ""RedWine"""
+"MEETINGS: ""Many"""," DRINK: ""WhiteWine""",
+"SYMPTOMS: ""Dizzy"""," MEETINGS: ""None"""," DRINK: ""None"""
+"MEETINGS: ""Few"""," DRINK: ""RedWine""",
+"SYMPTOMS: ""Dizzy"""," MEETINGS: ""Few"""," DRINK: ""Whisky"""
+"MEETINGS: ""None"""," DRINK: ""Whisky""",
+"MEETINGS: ""Few"""," DRINK: ""Bourbon""",
+"MEETINGS: ""None"""," DRINK: ""Beer""",
+"SYMPTOMS: ""Sinus"""," MEETINGS: ""Few"""," DRINK: ""None"""
+"MEETINGS: ""Many"""," DRINK: ""Beer""",
+"SYMPTOMS: ""Dizzy"""," DRINK: ""None""",
+"SYMPTOMS: ""Dizzy"""," MEETINGS: ""Many""",
+"SYMPTOMS: ""Dizzy"""," MEETINGS: ""None""",
+"SYMPTOMS: ""Dizzy"""," MEETINGS: ""Many"""," DRINK: ""None"""
+"MEETINGS: ""None"""," DRINK: ""RedWine""",
+"SYMPTOMS: ""Sinus"""," DRINK: ""None""",
+"SYMPTOMS: ""Dizzy"""," DRINK: ""Whisky""",
+"SYMPTOMS: ""Dizzy""",,
+"SYMPTOMS: ""Dizzy"""," MEETINGS: ""Few""",
+"SYMPTOMS: ""Dizzy"""," MEETINGS: ""Few"""," DRINK: ""None"""
+"DRINK: ""RedWine""",,
+"SYMPTOMS: ""Sinus"""," MEETINGS: ""Few""",
+"SYMPTOMS: ""Dizzy"""," DRINK: ""Bourbon""",
+"SYMPTOMS: ""Dizzy"""," DRINK: ""Beer""",
+"MEETINGS: ""None"""," DRINK: ""WhiteWine""",
+"SYMPTOMS: ""Dizzy"""," MEETINGS: ""None"""," DRINK: ""Beer"""
+"SYMPTOMS: ""Ear Pain"""," MEETINGS: ""None""",
+"SYMPTOMS: ""Dizzy"""," MEETINGS: ""Many"""," DRINK: ""RedWine"""
+"SYMPTOMS: ""Sinus"""," MEETINGS: ""None"""," DRINK: ""None"""
+"SYMPTOMS: ""Sinus"""," DRINK: ""Beer""",
+"SYMPTOMS: ""WateryEyes"""," MEETINGS: ""Few"""," DRINK: ""None"""
+"SYMPTOMS: ""Dizzy"""," MEETINGS: ""None"""," DRINK: ""WhiteWine"""
+"SYMPTOMS: ""Sinus""",,
+"SYMPTOMS: ""Dizzy"""," DRINK: ""WhiteWine""",
+"SYMPTOMS: ""Sinus"""," MEETINGS: ""Many"""," DRINK: ""None"""
+"SYMPTOMS: ""Ear Pain"""," DRINK: ""Bourbon""",
+"SYMPTOMS: ""Sinus"""," MEETINGS: ""None""",
+"SYMPTOMS: ""Ear Pain"""," MEETINGS: ""Few""",
+"SYMPTOMS: ""Ear Pain"""," DRINK: ""RedWine""",
+"SYMPTOMS: ""Ear Pain"""," MEETINGS: ""Few"""," DRINK: ""None"""
+"SYMPTOMS: ""Ear Pain"""," DRINK: ""None""",
+"SYMPTOMS: ""Ear Pain""",,
+"SYMPTOMS: ""WateryEyes"""," MEETINGS: ""Many"""," DRINK: ""None"""
+"SYMPTOMS: ""WateryEyes"""," MEETINGS: ""Few""",
+"SYMPTOMS: ""Sinus"""," MEETINGS: ""Many""",
+"SYMPTOMS: ""WateryEyes"""," MEETINGS: ""Many""",
+"SYMPTOMS: ""WateryEyes"""," DRINK: ""None""",
+"MEETINGS: ""Many"""," DRINK: ""Whisky""",
+"SYMPTOMS: ""WateryEyes""",,
+"MEETINGS: ""Few"""," DRINK: ""WhiteWine""",
+"SYMPTOMS: ""Headache"""," MEETINGS: ""Few"""," DRINK: ""None"""
+"SYMPTOMS: ""Headache"""," MEETINGS: ""None""",
+"SYMPTOMS: ""Headache""",,
+"SYMPTOMS: ""WateryEyes"""," MEETINGS: ""None""",
+"SYMPTOMS: ""Headache"""," DRINK: ""None""",
+"SYMPTOMS: ""Headache"""," MEETINGS: ""Few""",
+"MEETINGS: ""Many"""," DRINK: ""RedWine""",
+"SYMPTOMS: ""Headache"""," MEETINGS: ""Many""",
+"SYMPTOMS: ""Headache"""," MEETINGS: ""Many"""," DRINK: ""None"""
+"SYMPTOMS: ""WateryEyes"""," MEETINGS: ""None"""," DRINK: ""None"""
+"SYMPTOMS: ""Headache"""," MEETINGS: ""None"""," DRINK: ""None"""
+"SYMPTOMS: ""Sinus"""," DRINK: ""WhiteWine""",
+"SYMPTOMS: ""Ear Pain"""," MEETINGS: ""Many""",
+"SYMPTOMS: ""Headache"""," DRINK: ""RedWine""",
+"SYMPTOMS: ""Ear Pain"""," MEETINGS: ""Many"""," DRINK: ""None"""
+"SYMPTOMS: ""WateryEyes"""," DRINK: ""Whisky""",

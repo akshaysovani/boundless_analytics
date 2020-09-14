@@ -1,0 +1,909 @@
+hist row
+hist row
+hist row
+box row
+box row
+box row
+box row
+box row
+box row
+box row
+box row
+box row
+('items: ', [0])
+('itmList before--', set([]))
+('itmlist after--', [])
+2 [('DRINK', 'None')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+box row
+box row
+box row
+('items: ', [1])
+('itmList before--', set([0]))
+('itmlist after--', [0])
+('items now: ', [1, 0])
+3 [('SYMPTOMS', 'Dizzy')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+box row
+box row
+box row
+('items: ', [2])
+('itmList before--', set([0, 1]))
+('itmlist after--', [0, 1])
+('items now: ', [2, 0])
+('items now: ', [2, 1])
+4 [('MEETINGS', 'Many')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+box row
+box row
+box row
+('items: ', [3])
+('itmList before--', set([0, 1, 2]))
+('itmlist after--', [0, 1])
+('items now: ', [3, 0])
+('items now: ', [3, 1])
+5 [('MEETINGS', 'Few')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+box row
+box row
+box row
+('items: ', [4])
+('itmList before--', set([0, 1, 2, 3]))
+('itmlist after--', [0, 1])
+('items now: ', [4, 0])
+('items now: ', [4, 1])
+6 [('MEETINGS', 'None')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+box row
+box row
+box row
+('items: ', [1, 0])
+('itmList before--', set([]))
+('itmlist after--', [])
+7 [('SYMPTOMS', 'Dizzy'), ('DRINK', 'None')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [2, 0])
+('itmList before--', set([]))
+('itmlist after--', [])
+8 [('MEETINGS', 'Many'), ('DRINK', 'None')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [3, 0])
+('itmList before--', set([]))
+('itmlist after--', [])
+9 [('MEETINGS', 'Few'), ('DRINK', 'None')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [4, 0])
+('itmList before--', set([]))
+('itmlist after--', [])
+10 [('MEETINGS', 'None'), ('DRINK', 'None')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [2, 1])
+('itmList before--', set([0]))
+('itmlist after--', [0])
+('items now: ', [2, 1, 0])
+11 [('MEETINGS', 'Many'), ('SYMPTOMS', 'Dizzy')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [5])
+('itmList before--', set([0, 1, 2, 3, 4]))
+('itmlist after--', [0, 2, 3, 4])
+('items now: ', [5, 0])
+('items now: ', [5, 2])
+('items now: ', [5, 3])
+('items now: ', [5, 4])
+12 [('SYMPTOMS', 'Ear Pain')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+box row
+box row
+box row
+('items: ', [3, 1])
+('itmList before--', set([0]))
+('itmlist after--', [0])
+('items now: ', [3, 1, 0])
+13 [('MEETINGS', 'Few'), ('SYMPTOMS', 'Dizzy')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [4, 1])
+('itmList before--', set([0]))
+('itmlist after--', [0])
+('items now: ', [4, 1, 0])
+14 [('MEETINGS', 'None'), ('SYMPTOMS', 'Dizzy')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [6])
+('itmList before--', set([0, 1, 2, 3, 4, 5]))
+('itmlist after--', [0, 2, 3, 4])
+('items now: ', [6, 0])
+('items now: ', [6, 2])
+('items now: ', [6, 3])
+('items now: ', [6, 4])
+15 [('SYMPTOMS', 'Headache')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+box row
+box row
+box row
+('items: ', [7])
+('itmList before--', set([0, 1, 2, 3, 4, 5, 6]))
+('itmlist after--', [0, 2, 3, 4])
+('items now: ', [7, 0])
+('items now: ', [7, 2])
+('items now: ', [7, 3])
+('items now: ', [7, 4])
+16 [('SYMPTOMS', 'Sinus')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+box row
+box row
+box row
+('items: ', [8])
+('itmList before--', set([0, 1, 2, 3, 4, 5, 6, 7]))
+('itmlist after--', [0, 2, 3, 4])
+('items now: ', [8, 0])
+('items now: ', [8, 2])
+('items now: ', [8, 3])
+('items now: ', [8, 4])
+17 [('SYMPTOMS', 'WateryEyes')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+box row
+box row
+box row
+('items: ', [2, 1, 0])
+('itmList before--', set([]))
+('itmlist after--', [])
+18 [('MEETINGS', 'Many'), ('SYMPTOMS', 'Dizzy'), ('DRINK', 'None')]
+hist row
+hist row
+hist row
+('items: ', [4, 1, 0])
+('itmList before--', set([]))
+('itmlist after--', [])
+19 [('MEETINGS', 'None'), ('SYMPTOMS', 'Dizzy'), ('DRINK', 'None')]
+hist row
+hist row
+hist row
+('items: ', [5, 0])
+('itmList before--', set([]))
+('itmlist after--', [])
+20 [('SYMPTOMS', 'Ear Pain'), ('DRINK', 'None')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [6, 0])
+('itmList before--', set([]))
+('itmlist after--', [])
+21 [('SYMPTOMS', 'Headache'), ('DRINK', 'None')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [3, 1, 0])
+('itmList before--', set([]))
+('itmlist after--', [])
+22 [('MEETINGS', 'Few'), ('SYMPTOMS', 'Dizzy'), ('DRINK', 'None')]
+hist row
+hist row
+hist row
+('items: ', [7, 0])
+('itmList before--', set([]))
+('itmlist after--', [])
+23 [('SYMPTOMS', 'Sinus'), ('DRINK', 'None')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [8, 0])
+('itmList before--', set([]))
+('itmlist after--', [])
+24 [('SYMPTOMS', 'WateryEyes'), ('DRINK', 'None')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [9])
+('itmList before--', set([0, 1, 2, 3, 4, 5, 6, 7, 8]))
+('itmlist after--', [1, 2, 3, 4, 5, 6, 7, 8])
+('items now: ', [9, 1])
+('items now: ', [9, 2])
+('items now: ', [9, 3])
+('items now: ', [9, 4])
+('items now: ', [9, 5])
+('items now: ', [9, 6])
+25 [('DRINK', 'RedWine')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+box row
+box row
+box row
+('items: ', [10])
+('itmList before--', set([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]))
+('itmlist after--', [1, 2, 3, 4, 5, 6, 7, 8])
+('items now: ', [10, 1])
+('items now: ', [10, 2])
+('items now: ', [10, 3])
+('items now: ', [10, 4])
+('items now: ', [10, 8])
+26 [('DRINK', 'Whisky')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+box row
+box row
+box row
+('items: ', [11])
+('itmList before--', set([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
+('itmlist after--', [1, 2, 3, 4, 5, 6, 7, 8])
+('items now: ', [11, 1])
+('items now: ', [11, 2])
+('items now: ', [11, 3])
+('items now: ', [11, 4])
+('items now: ', [11, 7])
+27 [('DRINK', 'WhiteWine')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+box row
+box row
+box row
+('items: ', [5, 3])
+('itmList before--', set([0, 1, 2]))
+('itmlist after--', [0])
+('items now: ', [5, 3, 0])
+28 [('SYMPTOMS', 'Ear Pain'), ('MEETINGS', 'Few')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [12])
+('itmList before--', set([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]))
+('itmlist after--', [1, 2, 3, 4, 5, 6, 7, 8])
+('items now: ', [12, 1])
+('items now: ', [12, 2])
+('items now: ', [12, 3])
+('items now: ', [12, 4])
+('items now: ', [12, 7])
+29 [('DRINK', 'Beer')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+box row
+box row
+box row
+('items: ', [13])
+('itmList before--', set([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]))
+('itmlist after--', [1, 2, 3, 4, 5, 6, 7, 8])
+('items now: ', [13, 1])
+('items now: ', [13, 2])
+('items now: ', [13, 3])
+('items now: ', [13, 4])
+('items now: ', [13, 5])
+30 [('DRINK', 'Bourbon')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+box row
+box row
+box row
+('items: ', [6, 4])
+('itmList before--', set([0, 1, 2, 3]))
+('itmlist after--', [0])
+('items now: ', [6, 4, 0])
+31 [('SYMPTOMS', 'Headache'), ('MEETINGS', 'None')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [5, 2])
+('itmList before--', set([0, 1]))
+('itmlist after--', [0])
+('items now: ', [5, 2, 0])
+32 [('SYMPTOMS', 'Ear Pain'), ('MEETINGS', 'Many')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [7, 3])
+('itmList before--', set([0, 1, 2]))
+('itmlist after--', [0])
+('items now: ', [7, 3, 0])
+33 [('SYMPTOMS', 'Sinus'), ('MEETINGS', 'Few')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [7, 2])
+('itmList before--', set([0, 1]))
+('itmlist after--', [0])
+('items now: ', [7, 2, 0])
+34 [('SYMPTOMS', 'Sinus'), ('MEETINGS', 'Many')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [8, 2])
+('itmList before--', set([0, 1]))
+('itmlist after--', [0])
+('items now: ', [8, 2, 0])
+35 [('SYMPTOMS', 'WateryEyes'), ('MEETINGS', 'Many')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [8, 4])
+('itmList before--', set([0, 1, 2, 3]))
+('itmlist after--', [0])
+('items now: ', [8, 4, 0])
+36 [('SYMPTOMS', 'WateryEyes'), ('MEETINGS', 'None')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [5, 3, 0])
+('itmList before--', set([]))
+('itmlist after--', [])
+37 [('SYMPTOMS', 'Ear Pain'), ('MEETINGS', 'Few'), ('DRINK', 'None')]
+hist row
+hist row
+hist row
+('items: ', [6, 2])
+('itmList before--', set([0, 1]))
+('itmlist after--', [0])
+('items now: ', [6, 2, 0])
+38 [('SYMPTOMS', 'Headache'), ('MEETINGS', 'Many')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [8, 3])
+('itmList before--', set([0, 1, 2]))
+('itmlist after--', [0])
+('items now: ', [8, 3, 0])
+39 [('SYMPTOMS', 'WateryEyes'), ('MEETINGS', 'Few')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [6, 3])
+('itmList before--', set([0, 1, 2]))
+('itmlist after--', [0])
+('items now: ', [6, 3, 0])
+40 [('SYMPTOMS', 'Headache'), ('MEETINGS', 'Few')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [7, 4])
+('itmList before--', set([0, 1, 2, 3]))
+('itmlist after--', [0])
+('items now: ', [7, 4, 0])
+41 [('SYMPTOMS', 'Sinus'), ('MEETINGS', 'None')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [6, 4, 0])
+('itmList before--', set([]))
+('itmlist after--', [])
+42 [('SYMPTOMS', 'Headache'), ('MEETINGS', 'None'), ('DRINK', 'None')]
+hist row
+hist row
+hist row
+('items: ', [5, 4])
+('itmList before--', set([0, 1, 2, 3]))
+('itmlist after--', [0])
+('items now: ', [5, 4, 0])
+43 [('SYMPTOMS', 'Ear Pain'), ('MEETINGS', 'None')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [5, 2, 0])
+('itmList before--', set([]))
+('itmlist after--', [])
+44 [('SYMPTOMS', 'Ear Pain'), ('MEETINGS', 'Many'), ('DRINK', 'None')]
+hist row
+hist row
+hist row
+('items: ', [7, 3, 0])
+('itmList before--', set([]))
+('itmlist after--', [])
+45 [('SYMPTOMS', 'Sinus'), ('MEETINGS', 'Few'), ('DRINK', 'None')]
+hist row
+hist row
+hist row
+('items: ', [9, 1])
+('itmList before--', set([0]))
+('itmlist after--', [])
+46 [('DRINK', 'RedWine'), ('SYMPTOMS', 'Dizzy')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [8, 3, 0])
+('itmList before--', set([]))
+('itmlist after--', [])
+47 [('SYMPTOMS', 'WateryEyes'), ('MEETINGS', 'Few'), ('DRINK', 'None')]
+hist row
+hist row
+hist row
+('items: ', [6, 2, 0])
+('itmList before--', set([]))
+('itmlist after--', [])
+48 [('SYMPTOMS', 'Headache'), ('MEETINGS', 'Many'), ('DRINK', 'None')]
+hist row
+hist row
+hist row
+('items: ', [10, 1])
+('itmList before--', set([0]))
+('itmlist after--', [])
+49 [('DRINK', 'Whisky'), ('SYMPTOMS', 'Dizzy')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [7, 2, 0])
+('itmList before--', set([]))
+('itmlist after--', [])
+50 [('SYMPTOMS', 'Sinus'), ('MEETINGS', 'Many'), ('DRINK', 'None')]
+hist row
+hist row
+hist row
+('items: ', [8, 2, 0])
+('itmList before--', set([]))
+('itmlist after--', [])
+51 [('SYMPTOMS', 'WateryEyes'), ('MEETINGS', 'Many'), ('DRINK', 'None')]
+hist row
+hist row
+hist row
+('items: ', [11, 1])
+('itmList before--', set([0]))
+('itmlist after--', [])
+52 [('DRINK', 'WhiteWine'), ('SYMPTOMS', 'Dizzy')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [6, 3, 0])
+('itmList before--', set([]))
+('itmlist after--', [])
+53 [('SYMPTOMS', 'Headache'), ('MEETINGS', 'Few'), ('DRINK', 'None')]
+hist row
+hist row
+hist row
+('items: ', [12, 1])
+('itmList before--', set([0]))
+('itmlist after--', [])
+54 [('DRINK', 'Beer'), ('SYMPTOMS', 'Dizzy')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [9, 3])
+('itmList before--', set([0, 1, 2]))
+('itmlist after--', [1])
+('items now: ', [9, 3, 1])
+55 [('DRINK', 'RedWine'), ('MEETINGS', 'Few')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [13, 1])
+('itmList before--', set([0]))
+('itmlist after--', [])
+56 [('DRINK', 'Bourbon'), ('SYMPTOMS', 'Dizzy')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [10, 2])
+('itmList before--', set([0, 1]))
+('itmlist after--', [1])
+('items now: ', [10, 2, 1])
+57 [('DRINK', 'Whisky'), ('MEETINGS', 'Many')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [8, 4, 0])
+('itmList before--', set([]))
+('itmlist after--', [])
+58 [('SYMPTOMS', 'WateryEyes'), ('MEETINGS', 'None'), ('DRINK', 'None')]
+hist row
+hist row
+hist row
+('items: ', [7, 4, 0])
+('itmList before--', set([]))
+('itmlist after--', [])
+59 [('SYMPTOMS', 'Sinus'), ('MEETINGS', 'None'), ('DRINK', 'None')]
+hist row
+hist row
+hist row
+('items: ', [9, 2])
+('itmList before--', set([0, 1]))
+('itmlist after--', [1])
+('items now: ', [9, 2, 1])
+60 [('DRINK', 'RedWine'), ('MEETINGS', 'Many')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [9, 4])
+('itmList before--', set([0, 1, 2, 3]))
+('itmlist after--', [1])
+61 [('DRINK', 'RedWine'), ('MEETINGS', 'None')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [5, 4, 0])
+('itmList before--', set([]))
+('itmlist after--', [])
+62 [('SYMPTOMS', 'Ear Pain'), ('MEETINGS', 'None'), ('DRINK', 'None')]
+hist row
+hist row
+hist row
+('items: ', [11, 2])
+('itmList before--', set([0, 1]))
+('itmlist after--', [1])
+('items now: ', [11, 2, 1])
+63 [('DRINK', 'WhiteWine'), ('MEETINGS', 'Many')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [11, 4])
+('itmList before--', set([0, 1, 2, 3]))
+('itmlist after--', [1])
+('items now: ', [11, 4, 1])
+64 [('DRINK', 'WhiteWine'), ('MEETINGS', 'None')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [10, 4])
+('itmList before--', set([0, 1, 2, 3]))
+('itmlist after--', [1])
+65 [('DRINK', 'Whisky'), ('MEETINGS', 'None')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [10, 3])
+('itmList before--', set([0, 1, 2]))
+('itmlist after--', [1])
+('items now: ', [10, 3, 1])
+66 [('DRINK', 'Whisky'), ('MEETINGS', 'Few')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [12, 2])
+('itmList before--', set([0, 1]))
+('itmlist after--', [1])
+67 [('DRINK', 'Beer'), ('MEETINGS', 'Many')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [13, 4])
+('itmList before--', set([0, 1, 2, 3]))
+('itmlist after--', [1])
+68 [('DRINK', 'Bourbon'), ('MEETINGS', 'None')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [12, 4])
+('itmList before--', set([0, 1, 2, 3]))
+('itmlist after--', [1])
+('items now: ', [12, 4, 1])
+69 [('DRINK', 'Beer'), ('MEETINGS', 'None')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [11, 3])
+('itmList before--', set([0, 1, 2]))
+('itmlist after--', [1])
+70 [('DRINK', 'WhiteWine'), ('MEETINGS', 'Few')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [13, 2])
+('itmList before--', set([0, 1]))
+('itmlist after--', [1])
+71 [('DRINK', 'Bourbon'), ('MEETINGS', 'Many')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [13, 3])
+('itmList before--', set([0, 1, 2]))
+('itmlist after--', [1])
+72 [('DRINK', 'Bourbon'), ('MEETINGS', 'Few')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [9, 3, 1])
+('itmList before--', set([0]))
+('itmlist after--', [])
+73 [('DRINK', 'RedWine'), ('MEETINGS', 'Few'), ('SYMPTOMS', 'Dizzy')]
+hist row
+hist row
+hist row
+('items: ', [12, 3])
+('itmList before--', set([0, 1, 2]))
+('itmlist after--', [1])
+74 [('DRINK', 'Beer'), ('MEETINGS', 'Few')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [9, 5])
+('itmList before--', set([0, 1, 2, 3, 4]))
+('itmlist after--', [2, 3, 4])
+75 [('DRINK', 'RedWine'), ('SYMPTOMS', 'Ear Pain')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [9, 6])
+('itmList before--', set([0, 1, 2, 3, 4, 5]))
+('itmlist after--', [2, 3, 4])
+76 [('DRINK', 'RedWine'), ('SYMPTOMS', 'Headache')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [11, 7])
+('itmList before--', set([0, 1, 2, 3, 4, 5, 6]))
+('itmlist after--', [2, 3, 4])
+77 [('DRINK', 'WhiteWine'), ('SYMPTOMS', 'Sinus')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [10, 3, 1])
+('itmList before--', set([0]))
+('itmlist after--', [])
+78 [('DRINK', 'Whisky'), ('MEETINGS', 'Few'), ('SYMPTOMS', 'Dizzy')]
+hist row
+hist row
+hist row
+('items: ', [9, 2, 1])
+('itmList before--', set([0]))
+('itmlist after--', [])
+79 [('DRINK', 'RedWine'), ('MEETINGS', 'Many'), ('SYMPTOMS', 'Dizzy')]
+hist row
+hist row
+hist row
+('items: ', [11, 2, 1])
+('itmList before--', set([0]))
+('itmlist after--', [])
+80 [('DRINK', 'WhiteWine'), ('MEETINGS', 'Many'), ('SYMPTOMS', 'Dizzy')]
+hist row
+hist row
+hist row
+('items: ', [12, 7])
+('itmList before--', set([0, 1, 2, 3, 4, 5, 6]))
+('itmlist after--', [2, 3, 4])
+81 [('DRINK', 'Beer'), ('SYMPTOMS', 'Sinus')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [10, 8])
+('itmList before--', set([0, 1, 2, 3, 4, 5, 6, 7]))
+('itmlist after--', [2, 3, 4])
+82 [('DRINK', 'Whisky'), ('SYMPTOMS', 'WateryEyes')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
+('items: ', [12, 4, 1])
+('itmList before--', set([0]))
+('itmlist after--', [])
+83 [('DRINK', 'Beer'), ('MEETINGS', 'None'), ('SYMPTOMS', 'Dizzy')]
+hist row
+hist row
+hist row
+('items: ', [10, 2, 1])
+('itmList before--', set([0]))
+('itmlist after--', [])
+84 [('DRINK', 'Whisky'), ('MEETINGS', 'Many'), ('SYMPTOMS', 'Dizzy')]
+hist row
+hist row
+hist row
+('items: ', [11, 4, 1])
+('itmList before--', set([0]))
+('itmlist after--', [])
+85 [('DRINK', 'WhiteWine'), ('MEETINGS', 'None'), ('SYMPTOMS', 'Dizzy')]
+hist row
+hist row
+hist row
+('items: ', [13, 5])
+('itmList before--', set([0, 1, 2, 3, 4]))
+('itmlist after--', [2, 3, 4])
+86 [('DRINK', 'Bourbon'), ('SYMPTOMS', 'Ear Pain')]
+hist row
+hist row
+hist row
+box row
+box row
+box row
